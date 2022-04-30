@@ -13,11 +13,35 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Data set Description
 
-A brief description of the dataset and the entities
+The Tasmanian Land Records (1832-1935) dataset contains over 23,000 records relating to deeds of land grants under General Law.
+
+The Land records dataset contains links to digital objects available at the Tasmanian Names Index held and maintained at Libraries Tasmania. 
 
 ## Data Sources
 
-Key Data sources or repositories used.
+
+The data sources used were:
+
+1. Land records dataset - https://data.gov.au/dataset/ds-dga-4940b8e0-a2b4-49e6-b658-b124d98e2082/details?q=
+
+(Note: Original metadata is held at https://data.gov.au/data/dataset/tasmanian-land-records-1832-1972)
+
+This dataset contains the following fields
+
+- DIGITAL_OBJECT - URL_TEXT
+- DIGITAL_OBJECT - URL
+- LAND_DATE
+- RECORD_URL
+- REMARKS
+- LOCATION
+- NAME
+- YEAR
+- DESC_SR
+
+The datset was filtered to select only those records with a LOCATION containing 'Kempton' resulting in 55 records.
+
+2. The digital objects
+
 
 ## Variables and Rules
 
