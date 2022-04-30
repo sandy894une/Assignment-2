@@ -1,0 +1,30 @@
+---
+title: "data-dictionary"
+author: "Sandy Pullen"
+date: '2022-04-30'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Portfolio Task 1 - Data Dictionary
+
+## Data set Description
+
+A brief description of the dataset and the entities
+
+## Data Sources
+
+Key Data sources or repositories used.
+
+## Variables and Rules
+
+List each variable and the 'rules' for entering data. If there is a set of values you are choosing from include these as a list with brief definitions or supporting citations
+
+## Reference List
+
+if applicable.
+
+
