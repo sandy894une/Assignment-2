@@ -1,0 +1,68 @@
+---
+title: "Console Messages"
+author: "Sandy Pullen"
+date: '2022-05-02'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Console Messages from Image Capture - 2 May 2022 
+
+('Assignment-2/Portfolio-task-1/captured/RD1-1-11P185JPG_Ashton_John.jpg', <http.client.HTTPMessage object at 0x000002483DF20C70>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-13P33JPG_Ashton_John.jpg', <http.client.HTTPMessage object at 0x000002483DF44670>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-25P205JPG_Ashton_John.jpg', <http.client.HTTPMessage object at 0x000002483DF44A00>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-58P115JPG_Ashton_John.jpg', <http.client.HTTPMessage object at 0x000002483DF44D60>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-23P50JPG_Atkinson_Henry.jpg', <http.client.HTTPMessage object at 0x000002483DF20D90>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P092JPG_Breheny_James.jpg', <http.client.HTTPMessage object at 0x000002483DE08250>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P129JPG_Bryan_Thomas.jpg', <http.client.HTTPMessage object at 0x000002483DF443D0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-42P072JPG_Callaghan_Mary.jpg', <http.client.HTTPMessage object at 0x000002483DF446D0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-23P147JPG_Cartwright_Daniel.jpg', <http.client.HTTPMessage object at 0x000002483DF590D0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-24P168JPG_Cartwright_Daniel.jpg', <http.client.HTTPMessage object at 0x000002483DF59430>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-18P24JPG_Clark_William.jpg', <http.client.HTTPMessage object at 0x000002483DF59790>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-12P110JPG_Croxton_Thomas.jpg', <http.client.HTTPMessage object at 0x000002483DF59AF0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-12P110JPG_Croxton_Thomas.jpg', <http.client.HTTPMessage object at 0x000002483DF59E50>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-23P201JPG_Drinkwater_William.jpg', <http.client.HTTPMessage object at 0x000002483DF671F0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-25P193JPG_Flexmore_Francis.jpg', <http.client.HTTPMessage object at 0x000002483DF67550>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-44P028JPG_Gallagher_James.jpg', <http.client.HTTPMessage object at 0x000002483DF678B0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-56P051JPG_Goodwin_Edward.jpg', <http.client.HTTPMessage object at 0x000002483DF67C10>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P089JPG_Gorman_James.jpg', <http.client.HTTPMessage object at 0x000002483DF67F70>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-59P050JPG_Gorringe_Thomas.jpg', <http.client.HTTPMessage object at 0x000002483DF70310>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-18P31JPG_Hartley_William.jpg', <http.client.HTTPMessage object at 0x000002483DF70670>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-44P036JPG_Hayes_Fanny.jpg', <http.client.HTTPMessage object at 0x000002483DF709D0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P090JPG_Hayes_Michael.jpg', <http.client.HTTPMessage object at 0x000002483DF70D30>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-47P155JPG_Hayes_Michael.jpg', <http.client.HTTPMessage object at 0x000002483DF67FA0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-22P96JPG_Henry_Mark.jpg', <http.client.HTTPMessage object at 0x000002483DF67550>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-23P2JPG_Henry_Mark.jpg', <http.client.HTTPMessage object at 0x000002483DF67610>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-23P70JPG_Hurst_Henry.jpg', <http.client.HTTPMessage object at 0x000002483DF67100>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P045JPG_Kelly_Michael.jpg', <http.client.HTTPMessage object at 0x000002483DF44610>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P091JPG_Kennedy_James.jpg', <http.client.HTTPMessage object at 0x000002483DF44520>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P093JPG_Maloney_James.jpg', <http.client.HTTPMessage object at 0x000002483DF44AC0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P123JPG_McCabe_Hugh.jpg', <http.client.HTTPMessage object at 0x000002483DF20AC0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-43P157JPG_McDonald_Patrick.jpg', <http.client.HTTPMessage object at 0x000002483DF20A00>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-30P49JPG_Miller_William.jpg', <http.client.HTTPMessage object at 0x000002483DF70EB0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P125JPG_Murphey_Edmund.jpg', <http.client.HTTPMessage object at 0x000002483DF70490>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-17P122JPG_Olive_John.jpg', <http.client.HTTPMessage object at 0x000002483DF70130>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-21P48JPG_Olive_John.jpg', <http.client.HTTPMessage object at 0x000002483DF70F70>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-13P180JPG_Otter_George.jpg', <http.client.HTTPMessage object at 0x000002483DF6D310>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-24P161JPG_Otter_George.jpg', <http.client.HTTPMessage object at 0x000002483DF6D670>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-24P162JPG_Otter_George.jpg', <http.client.HTTPMessage object at 0x000002483DF6D9D0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-45P015JPG_Philbin_John.jpg', <http.client.HTTPMessage object at 0x000002483DF6DD30>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-13P153JPG_Pitt_Philip.jpg', <http.client.HTTPMessage object at 0x000002483DF590D0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-37P087JPG_Priestly_Thomas.jpg', <http.client.HTTPMessage object at 0x000002483DF6DDC0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-12P110JPG_Randall_Edward.jpg', <http.client.HTTPMessage object at 0x000002483DF6D490>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-21P49JPG_Sheed_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DF6D130>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-21P50JPG_Sheed_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DE171C0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-21P51JPG_Sheed_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DF20A00>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-22P89JPG_Speed_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DF20F70>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-22P90JPG_Speed_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DF44F10>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-22P91JPG_Speed_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DF444C0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-22P92JPG_Speed_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DF44B80>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-14P163JPG_Thompson_John.jpg', <http.client.HTTPMessage object at 0x000002483DF591C0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-44P001JPG_Tynan_Edward.jpg', <http.client.HTTPMessage object at 0x000002483DF59550>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-22P99JPG_Wellington_Elizabeth.jpg', <http.client.HTTPMessage object at 0x000002483DF598B0>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-17P145JPG_Wood_George.jpg', <http.client.HTTPMessage object at 0x000002483DF59C10>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-38P075JPG_Woodhead_Joseph.jpg', <http.client.HTTPMessage object at 0x000002483DF59F70>)
+('Assignment-2/Portfolio-task-1/captured/RD1-1-38P052JPG_Wright_James.jpg', <http.client.HTTPMessage object at 0x000002483DF73310>)
