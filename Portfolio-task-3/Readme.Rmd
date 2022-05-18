@@ -1,0 +1,54 @@
+---
+title: "Readme"
+author: "Sandy Pullen"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Thematic Analysis
+
+## Dataset Description
+
+The dataset in this activity consists of a set of documents downloaded from Trove, following a search in the 'Magazines and Newsletters' section using the keyword 'green ponds'.
+
+Green Ponds is the original name for the town of Kempton in the southern Midlands region of Tasmania, and the search was designed to find documents that had descriptive information on the township, the surrounding area, and travelling to and from Green Ponds via road or stage coach in early colonial history (1820-1860).
+
+Key documents were the Almanacs such as The Hobart Town Almanac and Wood's Almanac as described below.
+
+## Key data sources or respositories used
+
+The Almanacs were too large to use in their entirety so the filter feature of Trove was used to capture the relevant pages into a pdf. The documents and the sections obtained were:
+
+### The Hobart Town Almanac for the years 1829 and 1832
+
+DESCRIPTIVE ITINERARY OF VAN DIEMEN’S LAND. (1 January 1829) image 49-93
+'1829-The-Hobart-Town-almanack-p33-77.pdf'
+
+POST OFFICE
+'1829-The-Hobart-Town-almanack-post-office-p160-186.pdf'
+
+DESCRIPTIVE ITINERARY OF VAN DIEMEN’S LAND. (1 January 1841) image 38-48
+'1832-The-Hobart-Town-almanack-p24-144.pdf'
+
+POST OFFICE
+'1832-The-Hobart-Town-almanack-post-office-p222-225.pdf'
+
+### The Colonial Magazine and Commercial Maritime Journal 
+
+VAN DIEMEN’S LAND pp. 438-448.
+'1841-the-colonial-magazine-and-commercial-maritime-journal-p438-448.pdf'
+
+### Wood's V.D. Land almanack and law and commercial daily remembrancer
+
+Stage Coach information:
+'1846-woods-tasmanian-almanack-p30-31.pdf'
+'1847-woods-tasmanian-almanack-p24-26.pdf'
+'1851-woods-tasmanian-almanack-p29-30.pdf'
+
+## Definitions of data, key terms, themes or coding schemas
+
+## Reference List

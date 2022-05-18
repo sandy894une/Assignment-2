@@ -31,7 +31,7 @@ for index, row in df.iterrows():
   image_url="https://stors.tas.gov.au/fetch/" + row['IMAGE']
   
   # construct save name with IMAGE-LASTNAME-FIRSTNAME1, file path is relative to the cwd
-  save_name = "Assignment-2/Portfolio-task-1/captured/" + row['IMAGE'] + "_" + row['LASTNAME'] + "_" + row['FIRSTNAME1'] + ".jpg"
+  save_name = "Assignment-2/Portfolio-task-1/captured-grant-images/" + row['IMAGE'] + "_" + row['LASTNAME'] + "_" + row['FIRSTNAME1'] + ".jpg"
   
   # download the image from the URL
   # Adding user_agent information

@@ -1,7 +1,7 @@
 ---
 title: "Portfolio Task 1"
 author: "Sandy Pullen"
-date: '2022-05-03'
+date: "`r Sys.Date()`"
 output: pdf_document
 ---
 
@@ -27,11 +27,11 @@ The area of interest for this project is the location of Kempton, a historical t
 
 ### Original Dataset
 
-The Tasmanian Land Records (1832 - 1935) dataset was downloaded in CSV format.
+The Tasmanian Land Records (1832 - 1935) dataset was downloaded in CSV format and saved with filename land.csv
 
 ### Open Refine
 
-The dataset was opened in Open Refine and the following steps were performed.
+The original dataset was opened in Open Refine and the following steps were performed.
 
 1.  Check for the location of Kempton, and verify that the earlier name of Green Ponds was not used, and that there were no misspellings for Kempton using 'text facets'.
 
@@ -71,7 +71,7 @@ Inspection of the html code using Firefox revealed that the direct link to the i
 
 <https://stors.tas.gov.au/fetch/RD1-1-12P110JPG>
 
-So this column was split, using a separator of '=' to isolate the image name required (i.e. RD1-1-12P110JPG). The column was renamed 'IMAGE'.
+So the column DIGITAL_OBJECT - URL 2 was split, using a separator of '=' to isolate the image name required (i.e. RD1-1-12P110JPG). The column was renamed 'IMAGE'.
 
 The data file was saved as refined-land-csv-May-1.csv' in the folder for Portfolio Task 1.
 
@@ -87,9 +87,11 @@ Web sources used to develop the script are noted here: [^1] [^2] [^3]
 
 [^3]: <https://www.educative.io/edpresso/how-to-locally-save-an-image-using-urllib>
 
-An example of the digitised land record is shown in Figure 1.
+The python script is located in the file 'capture-images.py' in the folder for Portfolio Task 1.
 
-![Figure 1: Deed of Land Grant for Thomas Croxton](captured/RD1-1-12P110JPG_Croxton_Thomas.jpg)
+An example of the digitised land record image is shown in Figure 1.
+
+![Figure 1: Deed of Land Grant for Thomas Croxton - image RD1-1-12P110JPG](captured/RD1-1-12P110JPG_Croxton_Thomas.jpg){width="444"}
 
 ### Data Entry
 
@@ -101,12 +103,68 @@ New columns were added to allow data entry of information transcribed from the d
 
 -   SUM_SHILLINGS
 
+-   SUM_PENCE
+
 -   BOUNDARY DESCRIPTION
+
+-   DIAGRAM
+
+### Data Validation
+
+Data Validation was enabled for the DIAGRAM column to allow values of 'yes' or 'no'.
+
+### Measurement Conversion
+
+Length:
+
+-   1 foot = 12 inches
+
+-   3 feet = 1 yard (Feet to Metres = multiply by 0.3048)
+
+-   1 chain = 22 yards
+
+-   10 chains = 1 furlong
+
+-   100 links = 1 chain
+
+-   1 mile = 8 furlongs
+
+-   1 link equals 0.2 metres (Links to Metres = multiply by 0.2012)
+
+Area:
+
+-   40 perches equals 1 rood
+
+-   4 roods equals 1 acre
+
+-   1 acre equals 0.4 hectares (Acres to Hectares = multiply by 0.404686)
+
+(Source: [Historic Deeds General Law User Guide](https://www.thelist.tas.gov.au/app/content/the-list/help-files/Historic-Deeds/Historic_Deeds_General_Law_guide.pdf))
+
+## Manual Processes
+
+.. not sure about this... shows subsequent sale of land...
+
+Automating the subsequent steps of data collation was beyond the scope of this unit, so a manual process was used to retrieve the xxx document for each grant from the xx site following the steps outlined in
+
+[Historic Deeds General Law User Guide](https://www.thelist.tas.gov.au/app/content/the-list/help-files/Historic-Deeds/Historic_Deeds_General_Law_guide.pdf)
+
+The manual process involved these steps:
+
+-   search for surname and year in the list map site
+
+-   download the index pdf covering the appropriate period
+
+-   search for the correct name, and extract the deed number and store this in the dataset
+
+-   download the deed and save the image.
 
 ## Results
 
 For the 55 records, there were 54 unique images. One image was repeated due to the land being owned in partnership. ( i,e, Thomas Croxton and Edward Randall were joint owners, so there is one record for each person, linking to the same image.)
 
 One record had blank year information, this was visually checked on the deed image, and confirmed as missing. 'missing' was entered into this cell in the data entry phase.
+
+Not all images had monetary values included, and the format of the document changed over the years.
 
 ## Reference List

@@ -1,0 +1,59 @@
+---
+title: "Research Design"
+author: "Sandy Pullen"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Research Design
+
+## Introduction
+
+The question explored through this portfolio is:
+
+| What is the contribution of research in the digital humanities to the production and dissemination of public 'stories' or interpretations about aspects of local community history and cultural heritage?
+| Drawing on a series of related case studies, illustrate how these tools and methods can aid historical scholarship.
+
+The series of related case studies used to illustrate tools and methods in Digital Humanities centres around the historic town of Kempton in the Southern Midlands district of Tasmania.
+
+## Background
+
+contextualise Kempton
+
+locality
+
+local historical context
+
+previous relevant historical / archaeological / heritage studies
+
+## Research Methodology
+
+overview of methodology
+
+brief comment on major approaches used to complete the portfolio tasks
+
+### Task 1
+
+This task uses the Tasmanian Land Records (1832-1935) dataset filtered to only include records from Kempton. Images of the deeds were downloaded via a URL in the dataset from the Tasmanian Names Index held and maintained at Libraries Tasmania. Additional data was transcribed and added to the task dataset.
+
+### Task 2
+
+This task curates a digital repository of publicly available audio-visual data relevant to Kempton and the broader Southern Midlands district.
+
+### Task 3
+
+thematic coding - more details to come
+
+### Task 4
+
+creating a digital map
+
+### Task 5
+
+design a schema for collecting structured data...
+
+

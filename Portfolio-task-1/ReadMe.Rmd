@@ -1,7 +1,7 @@
 ---
 title: "ReadMe"
 author: "Sandy Pullen"
-date: '2022-04-30'
+date: "`r Sys.Date()`"
 output: pdf_document
 ---
 
@@ -48,24 +48,20 @@ The data in the added fields listed below has been transcribed from the digitise
 The added fields are:
 
 -   BOUNDARY_DESCRIPTION
--   SUM
--   MARGIN_DATA
+-   SUM_POUNDS
+-   SUM_SHILLINGS
+-   SUM_PENCE
+-   DIAGRAM
 
 ## Files used in this project
 
-+----------------------------+---------------------------------------------------------------------------------+
 | Filename                   | Description                                                                     |
-+============================+=================================================================================+
+|----------------------------|---------------------------------------------------------------------------------|
 | land.csv                   | raw data of 23,000 + records                                                    |
-+----------------------------+---------------------------------------------------------------------------------+
 | refined-land-csv-May-1.csv | filtered and refined dataset of 55 records for Kempton                          |
-+----------------------------+---------------------------------------------------------------------------------+
 | data-entry.xlsx            | refined dataset with added columns for data entry and validation rules included |
-+----------------------------+---------------------------------------------------------------------------------+
 | data-entry.csv             | exported file from Excel after data entry completed                             |
-+----------------------------+---------------------------------------------------------------------------------+
 | capture-images.py          | Python script to download images from Libraries Tasmania website                |
-+----------------------------+---------------------------------------------------------------------------------+
 
 ## Variables and Rules
 
@@ -86,7 +82,7 @@ The following variables were used for data entry, transcribing written words fro
 +----------------------+------------------------------------------------------------------------------------------------------+
 | SUM_PENCE            | Contains the value in integers of the written word amount for pence after the text 'the Sum of'.     |
 |                      |                                                                                                      |
-|                      | Value= 0 if pounds and/or shillings has a value but there are no pence.                              |
+|                      | Value= 0 if pounds and/or shillings have a value but there are no pence.                             |
 |                      |                                                                                                      |
 |                      | Value = 'np' if no monetary value present                                                            |
 +----------------------+------------------------------------------------------------------------------------------------------+
@@ -94,7 +90,11 @@ The following variables were used for data entry, transcribing written words fro
 |                      |                                                                                                      |
 |                      | 'bounded as follows (that is to say) on the'                                                         |
 |                      |                                                                                                      |
-|                      | on the digital image. To be used to accurately locate the land granted on a map.                     |
+|                      | on the digital image. This will be used to accurately locate the land grant on a map.                |
++----------------------+------------------------------------------------------------------------------------------------------+
+| DIAGRAM              | Indicates whether a plan is drawn in the margins                                                     |
+|                      |                                                                                                      |
+|                      | Value = 'yes' or 'no'                                                                                |
 +----------------------+------------------------------------------------------------------------------------------------------+
 
 ## Reference List

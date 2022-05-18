@@ -1,0 +1,21 @@
+---
+title: "Discussion and Conclusions"
+author: "Sandy Pullen"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Discussion and Conclusions
+
+Address the question and highlight key findings drawing on examples from the case studies
+
+800-1000 words
+
+## Discussion
+
+## Conclusions
+
