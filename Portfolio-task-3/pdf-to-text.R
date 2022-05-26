@@ -27,7 +27,7 @@ rm(list=ls())
 # Easiest way to get this location is to browse from the Files pane, and in the More menu
 # Select Copy Folder Path to Clipboard, and paste below.
 
-setwd('C:/Users/sandy/OneDrive - University of New England/HINQ302/PracticeCorpus')
+setwd('C:/Users/sandy/OneDrive - University of New England/HINQ302/Assignment-2/Portfolio-task-3')
 
 
 # copy the path to the location that your PDFS are stored, and replace in the URL below:
