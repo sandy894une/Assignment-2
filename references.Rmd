@@ -3,15 +3,20 @@ title: "References"
 author: "Sandy Pullen"
 date: "`r Sys.Date()`"
 output: pdf_document
+bibliography: references.bib
+
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+citations in text here:
+
+
+blah blah [@maheshwari].
+
+more blah [@velásquez2021b].
+
 # References
-
-works cited
-
-
 

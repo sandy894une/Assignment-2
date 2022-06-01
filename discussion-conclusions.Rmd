@@ -16,6 +16,17 @@ Address the question and highlight key findings drawing on examples from the cas
 800-1000 words
 
 ## Discussion
+The research methodology used in this project is founded on the principles of reproducible research which can be defined as follows:
+
+documentation of both data and processes for transparency and so that results can be replicated,
+
+the use of open-source software and file formats
+
+production of tidy data
+
+Sound data management techniques
+
+FAIR principles relating to data management state that data should be Findable, Accessible, Inter-operable and Re-usable (Essen 2020) . These principles were followed in this project through the use of
 
 ## Conclusions
 

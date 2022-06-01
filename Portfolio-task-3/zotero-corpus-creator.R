@@ -1,9 +1,6 @@
 # PDF to Text Tool
-# filename:zotero-corpus-creator.R
 # MiCk Morrison
 # 6 May 2022
-
-#altered by Sandy Pullen for Portfolio-activity-3
 # This is a simple demo of using Rstudio/Rscripts to extract text from PDFS for textual analysis
 # The goal is to create a corpus from a selected folder containing PDFS. This works on batches of PDFs, 
 # rather than single PDFS.
@@ -15,17 +12,12 @@
 # install.packages("pdftools") 
 # install.packages("tesseract") 
 # install.packages("tm")
-
-
 # Run these three lines ^ above the first time you attempt this. Just remove the # from each line to make the code live.
 # Comment them out again once installed successfully.
 
-
-library(tidyverse) #needed for str_remove
 library(pdftools)
 library(tesseract)
 library(tm)
-
 
 # Clear the local env before starting. Be sure to do this if you are having problems, i.e. then re-run the script from here
 
@@ -43,30 +35,23 @@ setwd('C:/Users/sandy/OneDrive - University of New England/HINQ302/Assignment-2/
 # search for PDFs (pattern="pdf$"), to search all sub-folders (recursive = TRUE) and include the full
 # path of the file in the 'files' object (include.dirs = TRUE):
 
-list_of_files <- list.files(path=".", pattern = "pdf$", recursive = TRUE, include.dirs = TRUE)
+files <- list.files(path=".", pattern = "pdf$", recursive = TRUE, include.dirs = TRUE)
 
 # Check that the PDFs imported successfully into the 'files' dataset
 
-head(list_of_files) # This will produce a list of the files you have imported (or a selection of them)
-class(list_of_files) # This tells us that 'files' is a character object. At present though, we just have the file names and nothing more
+head(files) # This will produce a list of the files you have imported (or a selection of them)
+class(files) # This tells us that 'files' is a character object. At present though, we just have the file names and nothing more
 
+# now we have our text, we need to organise it a little and add it to a corpus using the TM library ('text mining')
+corp <- Corpus(URISource(files),
+               readerControl = list(reader = readPDF))
 
-#remove the file extension from the filenames to be used in the loop
-pdf_file_list <- str_remove(list_of_files,pattern=".pdf")
-head(pdf_file_list)
-for (i in pdf_file_list){
-  
-  pdf_name =paste(i,".pdf",sep="")
-  txt_name = paste(i,".txt", sep="")
-  
-  eng <- tesseract("eng")
-  text <- tesseract::ocr(pdf_name ,engine = eng)
-  cat(text, file = txt_name)
-  
-}
+# Now, R has created a  'volatile corpus', or VCorpus, which is your corpus loaded only in R's memory (which is why it lives in your Global Environment)
+# Because R is scary, here we will do the rest of our analysis in other applications.
+# To export your corpus to text files, run:
 
+writeCorpus(corp) #this will output each of the converted text files to individual text files in your working directory. Take a look now. 
 
 # Acknowledgements
 ## A portion of this script is based  on guidelines provided at 
 ## https://data.library.virginia.edu/reading-pdf-files-into-r-for-text-mining/
-## https://cran.r-project.org/web/packages/tesseract/vignettes/intro.html

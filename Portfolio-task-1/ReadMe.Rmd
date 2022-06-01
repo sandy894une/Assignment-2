@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Portfolio Task 1 - Data Schema
 
-## Data set Description
+## Data Set Description
 
 The Tasmanian Land Records (1832-1935) dataset contains over 23,000 records relating to deeds of land grants under General Law.
 
@@ -47,7 +47,7 @@ The data in the added fields listed below has been transcribed from the digitise
 
 The added fields are:
 
--   BOUNDARY_DESCRIPTION
+-   BOUNDARY
 -   SUM_POUNDS
 -   SUM_SHILLINGS
 -   SUM_PENCE
@@ -55,47 +55,55 @@ The added fields are:
 
 ## Files used in this project
 
-| Filename                   | Description                                                                     |
-|----------------------------|---------------------------------------------------------------------------------|
-| land.csv                   | raw data of 23,000 + records                                                    |
-| refined-land-csv-May-1.csv | filtered and refined dataset of 55 records for Kempton                          |
-| data-entry.xlsx            | refined dataset with added columns for data entry and validation rules included |
-| data-entry.csv             | exported file from Excel after data entry completed                             |
-| capture-images.py          | Python script to download images from Libraries Tasmania website                |
++----------------------------+------------------------------------------------------------------------+
+| Filename                   | Description                                                            |
++============================+========================================================================+
+| land.csv                   | raw data of 23,000 + records                                           |
++----------------------------+------------------------------------------------------------------------+
+| refined-land-csv-May-1.csv | filtered and refined dataset of 55 records for Kempton                 |
++----------------------------+------------------------------------------------------------------------+
+| data-entry.xlsx            | refined dataset with added columns for data entry,                     |
+|                            |                                                                        |
+|                            | validation rules included.                                             |
++----------------------------+------------------------------------------------------------------------+
+| portfolio-task-01-data.csv | exported file from Excel after data entry completed on data-entry.xlsx |
++----------------------------+------------------------------------------------------------------------+
+| capture-images.py          | Python script to download images from Libraries Tasmania website       |
++----------------------------+------------------------------------------------------------------------+
 
 ## Variables and Rules
 
 The following variables were used for data entry, transcribing written words from the digital image relating to the land record.
 
-+----------------------+------------------------------------------------------------------------------------------------------+
-| Column Heading       | Rules                                                                                                |
-+======================+======================================================================================================+
-| SUM_POUNDS           | Contains the value in integers of the written word amount for pounds after the text 'the Sum of'.    |
-|                      |                                                                                                      |
-|                      | Value = 'np' if no monetary value present                                                            |
-+----------------------+------------------------------------------------------------------------------------------------------+
-| SUM_SHILLINGS        | Contains the value in integers of the written word amount for shillings after the text 'the Sum of'. |
-|                      |                                                                                                      |
-|                      | Value= 0 if pounds has a value but there are no shillings.                                           |
-|                      |                                                                                                      |
-|                      | Value = 'np' if no monetary value present                                                            |
-+----------------------+------------------------------------------------------------------------------------------------------+
-| SUM_PENCE            | Contains the value in integers of the written word amount for pence after the text 'the Sum of'.     |
-|                      |                                                                                                      |
-|                      | Value= 0 if pounds and/or shillings have a value but there are no pence.                             |
-|                      |                                                                                                      |
-|                      | Value = 'np' if no monetary value present                                                            |
-+----------------------+------------------------------------------------------------------------------------------------------+
-| BOUNDARY_DESCRIPTION | Transcribed text of the paragraph following the text                                                 |
-|                      |                                                                                                      |
-|                      | 'bounded as follows (that is to say) on the'                                                         |
-|                      |                                                                                                      |
-|                      | on the digital image. This will be used to accurately locate the land grant on a map.                |
-+----------------------+------------------------------------------------------------------------------------------------------+
-| DIAGRAM              | Indicates whether a plan is drawn in the margins                                                     |
-|                      |                                                                                                      |
-|                      | Value = 'yes' or 'no'                                                                                |
-+----------------------+------------------------------------------------------------------------------------------------------+
++------------------------+------------------------------------------------------------------------------------------------------+
+| Column Heading         | Rules                                                                                                |
++========================+======================================================================================================+
+| SUM_POUNDS             | Contains the value in integers of the written word amount for pounds after the text 'the Sum of'.    |
+|                        |                                                                                                      |
+|                        | Value = 'np' if no monetary value present                                                            |
++------------------------+------------------------------------------------------------------------------------------------------+
+| SUM_SHILLINGS          | Contains the value in integers of the written word amount for shillings after the text 'the Sum of'. |
+|                        |                                                                                                      |
+|                        | Value= 0 if pounds has a value but there are no shillings.                                           |
+|                        |                                                                                                      |
+|                        | Value = 'np' if no monetary value present                                                            |
++------------------------+------------------------------------------------------------------------------------------------------+
+| SUM_PENCE              | Contains the value in integers of the written word amount for pence after the text 'the Sum of'.     |
+|                        |                                                                                                      |
+|                        | Value= 0 if pounds and/or shillings have a value but there are no pence.                             |
+|                        |                                                                                                      |
+|                        | Value = 'np' if no monetary value present                                                            |
++------------------------+------------------------------------------------------------------------------------------------------+
+| BOUNDARY               | Transcribed text of the paragraph following the text                                                 |
+|                        |                                                                                                      |
+|                        | 'bounded as follows (that is to say) on the'                                                         |
+|                        |                                                                                                      |
+|                        | on the digital image. This will be used to accurately locate the land grant on a map.                |
++------------------------+------------------------------------------------------------------------------------------------------+
+| DIAGRAM                | Indicates whether a plan is drawn in the margins                                                     |
+|                        |                                                                                                      |
+|                        | Value = 'yes' or 'no'                                                                                |
++------------------------+------------------------------------------------------------------------------------------------------+
 
 ## Reference List
 

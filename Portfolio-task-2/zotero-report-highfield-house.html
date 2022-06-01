@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Zotero Report</title>
+		<link rel="stylesheet" type="text/css" href="data:text/css;base64,Ym9keSB7CgliYWNrZ3JvdW5kOiB3aGl0ZTsKfQoKYSB7Cgl0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsKfQoKYm9keSB7CglwYWRkaW5nOiAwOwp9Cgp1bC5yZXBvcnQgbGkuaXRlbSB7Cglib3JkZXItdG9wOiA0cHggc29saWQgIzU1NTsKCXBhZGRpbmctdG9wOiAxZW07CglwYWRkaW5nLWxlZnQ6IDFlbTsKCXBhZGRpbmctcmlnaHQ6IDFlbTsKCW1hcmdpbi1ib3R0b206IDJlbTsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7Cglmb250LXdlaWdodDogbm9ybWFsOwp9CgpoMiB7CgltYXJnaW46IDAgMCAuNWVtOwp9CgpoMi5wYXJlbnRJdGVtIHsKCWZvbnQtd2VpZ2h0OiBib2xkOwoJZm9udC1zaXplOiAxZW07CglwYWRkaW5nOiAwIDAgLjVlbTsKCWJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjOwp9CgovKiBJZiBjb21iaW5pbmcgY2hpbGRyZW4sIGRpc3BsYXkgcGFyZW50IHNsaWdodGx5IGxhcmdlciAqLwp1bC5yZXBvcnQuY29tYmluZUNoaWxkSXRlbXMgaDIucGFyZW50SXRlbSB7Cglmb250LXNpemU6IDEuMWVtOwoJcGFkZGluZy1ib3R0b206IC43NWVtOwoJbWFyZ2luLWJvdHRvbTogLjRlbTsKfQoKaDIucGFyZW50SXRlbSAudGl0bGUgewoJZm9udC13ZWlnaHQ6IG5vcm1hbDsKfQoKaDMgewoJbWFyZ2luLWJvdHRvbTogLjZlbTsKCWZvbnQtd2VpZ2h0OiBib2xkICFpbXBvcnRhbnQ7Cglmb250LXNpemU6IDFlbTsKCWRpc3BsYXk6IGJsb2NrOwp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0aCB7Cgl2ZXJ0aWNhbC1hbGlnbjogdG9wOwoJdGV4dC1hbGlnbjogcmlnaHQ7Cgl3aWR0aDogMTUlOwoJd2hpdGUtc3BhY2U6IG5vd3JhcDsKfQoKdGQgewoJcGFkZGluZy1sZWZ0OiAuNWVtOwp9CgoKdWwucmVwb3J0LCB1bC5ub3RlcywgdWwudGFncyB7CglsaXN0LXN0eWxlOiBub25lOwoJbWFyZ2luLWxlZnQ6IDA7CglwYWRkaW5nLWxlZnQ6IDA7Cn0KCi8qIFRhZ3MgKi8KaDMudGFncyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC50YWdzIHsKCWxpbmUtaGVpZ2h0OiAxLjc1ZW07CglsaXN0LXN0eWxlOiBub25lOwp9Cgp1bC50YWdzIGxpIHsKCWRpc3BsYXk6IGlubGluZTsKfQoKdWwudGFncyBsaTpub3QoOmxhc3QtY2hpbGQpOmFmdGVyIHsKCWNvbnRlbnQ6ICcsICc7Cn0KCgovKiBDaGlsZCBub3RlcyAqLwpoMy5ub3RlcyB7Cglmb250LXNpemU6IDEuMWVtOwp9Cgp1bC5ub3RlcyB7CgltYXJnaW4tYm90dG9tOiAxLjJlbTsKfQoKdWwubm90ZXMgPiBsaTpmaXJzdC1jaGlsZCBwIHsKCW1hcmdpbi10b3A6IDA7Cn0KCnVsLm5vdGVzID4gbGkgewoJcGFkZGluZzogLjdlbSAwOwp9Cgp1bC5ub3RlcyA+IGxpOm5vdCg6bGFzdC1jaGlsZCkgewoJYm9yZGVyLWJvdHRvbTogMXB4ICNjY2Mgc29saWQ7Cn0KCgp1bC5ub3RlcyA+IGxpIHA6Zmlyc3QtY2hpbGQgewoJbWFyZ2luLXRvcDogMDsKfQoKdWwubm90ZXMgPiBsaSBwOmxhc3QtY2hpbGQgewoJbWFyZ2luLWJvdHRvbTogMDsKfQoKLyogQWRkIHF1b3RhdGlvbiBtYXJrcyBhcm91bmQgYmxvY2txdW90ZSAqLwp1bC5ub3RlcyA+IGxpIGJsb2NrcXVvdGUgcDpub3QoOmVtcHR5KTpiZWZvcmUsCmxpLm5vdGUgYmxvY2txdW90ZSBwOm5vdCg6ZW1wdHkpOmJlZm9yZSB7Cgljb250ZW50OiAn4oCcJzsKfQoKdWwubm90ZXMgPiBsaSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciwKbGkubm90ZSBibG9ja3F1b3RlIHA6bm90KDplbXB0eSk6bGFzdC1jaGlsZDphZnRlciB7Cgljb250ZW50OiAn4oCdJzsKfQoKLyogUHJlc2VydmUgd2hpdGVzcGFjZSBvbiBwbGFpbnRleHQgbm90ZXMgKi8KdWwubm90ZXMgbGkgcC5wbGFpbnRleHQsIGxpLm5vdGUgcC5wbGFpbnRleHQsIGRpdi5ub3RlIHAucGxhaW50ZXh0IHsKCXdoaXRlLXNwYWNlOiBwcmUtd3JhcDsKfQoKLyogRGlzcGxheSB0YWdzIHdpdGhpbiBjaGlsZCBub3RlcyBpbmxpbmUgKi8KdWwubm90ZXMgaDMudGFncyB7CglkaXNwbGF5OiBpbmxpbmU7Cglmb250LXNpemU6IDFlbTsKfQoKdWwubm90ZXMgaDMudGFnczphZnRlciB7Cgljb250ZW50OiAnICc7Cn0KCnVsLm5vdGVzIHVsLnRhZ3MgewoJZGlzcGxheTogaW5saW5lOwp9Cgp1bC5ub3RlcyB1bC50YWdzIGxpOm5vdCg6bGFzdC1jaGlsZCk6YWZ0ZXIgewoJY29udGVudDogJywgJzsKfQoKCi8qIENoaWxkIGF0dGFjaG1lbnRzICovCmgzLmF0dGFjaG1lbnRzIHsKCWZvbnQtc2l6ZTogMS4xZW07Cn0KCnVsLmF0dGFjaG1lbnRzIGxpIHsKCXBhZGRpbmctdG9wOiAuNWVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSB7CgltYXJnaW4tbGVmdDogMmVtOwp9Cgp1bC5hdHRhY2htZW50cyBkaXYubm90ZSBwOmZpcnN0LWNoaWxkIHsKCW1hcmdpbi10b3A6IC43NWVtOwp9CgpkaXYgdGFibGUgewoJYm9yZGVyLWNvbGxhcHNlOiBjb2xsYXBzZTsKfQoKZGl2IHRhYmxlIHRkLCBkaXYgdGFibGUgdGggewoJYm9yZGVyOiAxcHggI2NjYyBzb2xpZDsKCWJvcmRlci1jb2xsYXBzZTogY29sbGFwc2U7Cgl3b3JkLWJyZWFrOiBicmVhay1hbGw7Cn0KCmRpdiB0YWJsZSB0ZCBwOmVtcHR5OjphZnRlciwgZGl2IHRhYmxlIHRoIHA6ZW1wdHk6OmFmdGVyIHsKCWNvbnRlbnQ6ICJcMDBhMCI7Cn0KCmRpdiB0YWJsZSB0ZCAqOmZpcnN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpmaXJzdC1jaGlsZCB7CgltYXJnaW4tdG9wOiAwOwp9CgpkaXYgdGFibGUgdGQgKjpsYXN0LWNoaWxkLCBkaXYgdGFibGUgdGggKjpsYXN0LWNoaWxkIHsKCW1hcmdpbi1ib3R0b206IDA7Cn0K">
+		<link rel="stylesheet" type="text/css" media="screen,projection" href="data:text/css;base64,LyogR2VuZXJpYyBzdHlsZXMgKi8KYm9keSB7Cglmb250OiA2Mi41JSBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cgl3aWR0aDogNzgwcHg7CgltYXJnaW46IDAgYXV0bzsKfQoKaDIgewoJZm9udC1zaXplOiAxLjVlbTsKCWxpbmUtaGVpZ2h0OiAxLjVlbTsKCWZvbnQtZmFtaWx5OiBHZW9yZ2lhLCBUaW1lcywgc2VyaWY7Cn0KCnAgewoJbGluZS1oZWlnaHQ6IDEuNWVtOwp9CgphOmxpbmssIGE6dmlzaXRlZCB7Cgljb2xvcjogIzkwMDsKfQoKYTpob3ZlciwgYTphY3RpdmUgewoJY29sb3I6ICM3Nzc7Cn0KCgp1bC5yZXBvcnQgewoJZm9udC1zaXplOiAxLjRlbTsKCXdpZHRoOiA2ODBweDsKCW1hcmdpbjogMCBhdXRvOwoJcGFkZGluZzogMjBweCAyMHB4Owp9CgovKiBNZXRhZGF0YSB0YWJsZSAqLwp0YWJsZSB7Cglib3JkZXI6IDFweCAjY2NjIHNvbGlkOwoJb3ZlcmZsb3c6IGF1dG87Cgl3aWR0aDogMTAwJTsKCW1hcmdpbjogLjFlbSBhdXRvIC43NWVtOwoJcGFkZGluZzogMC41ZW07Cn0K">
+		<link rel="stylesheet" type="text/css" media="print" href="data:text/css;base64,Ym9keSB7Cglmb250OiAxMnB0ICJUaW1lcyBOZXcgUm9tYW4iLCBUaW1lcywgR2VvcmdpYSwgc2VyaWY7CgltYXJnaW46IDA7Cgl3aWR0aDogYXV0bzsKCWNvbG9yOiBibGFjazsKfQoKLyogUGFnZSBCcmVha3MgKHBhZ2UtYnJlYWstaW5zaWRlIG9ubHkgcmVjb2duaXplZCBieSBPcGVyYSkgKi8KaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CglwYWdlLWJyZWFrLWFmdGVyOiBhdm9pZDsKCXBhZ2UtYnJlYWstaW5zaWRlOiBhdm9pZDsKfQoKdWwsIG9sLCBkbCB7CglwYWdlLWJyZWFrLWluc2lkZTogYXZvaWQ7Cgljb2xvci1hZGp1c3Q6IGV4YWN0Owp9CgpoMiB7Cglmb250LXNpemU6IDEuM2VtOwoJbGluZS1oZWlnaHQ6IDEuM2VtOwp9CgphIHsKCWNvbG9yOiAjMDAwOwoJdGV4dC1kZWNvcmF0aW9uOiBub25lOwp9Cg==">
+	</head>
+	<body>
+		<ul class="report combineChildItems">
+			<li id="item_8YBX552Y" class="item webpage">
+			<h2>86 Main Street Kempton, TAS 7030 - House for sale - 3NFNFCS</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Web Page</td>
+					</tr>
+					<tr>
+					<th>Abstract</th>
+						<td>Welcome to Highfield House - 86 Main Street, Kempton, TAS 7030 - House for sale #3NFNFCS - LJ Hooker Pinnacle Property</td>
+					</tr>
+					<tr>
+					<th>Language</th>
+						<td>en-AU</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://pinnacleproperty.ljhooker.com.au/house-in-kempton-tas-7030-au-3nfnfcs">https://pinnacleproperty.ljhooker.com.au/house-in-kempton-tas-7030-au-3nfnfcs</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>5/19/2022, 12:34:28 PM</td>
+					</tr>
+					<tr>
+					<th>Website Title</th>
+						<td>LJ Hooker Pinnacle Property</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>5/19/2022, 12:34:28 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>5/19/2022, 12:34:28 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_NRRRMYXZ">
+<div><div data-schema-version="8"><p>86 Main Street, Kempton. Highfield House.</p>
+<p>Aerial view of the property, shows the blue church to the left, the rear of the property and the garages on the right.</p>
+<ol>
+<li>
+A modern aerial photo showing Highfield House and the buildings either side. Taken 2021 when the property was put up for sale.
+</li>
+<li>
+staged
+</li>
+<li>
+The blue Presbyterian church, Highfield House, and the building to the right, with a view to the rear of all three properties.
+</li>
+<li>
+no
+</li>
+<li>
+In the background is the undeveloped land extending to a road that is at the edge of the photo.
+</li>
+<li>
+Eye is drawn to Highfield House
+</li>
+<li>
+A modern view taken in the present day to allow comparison.
+</li>
+</ol>
+<p></p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_2ZBP9IF3">Highfield-House-aerial.jpg					</li>
+					<li id="item_94GT3MSM">Snapshot					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_6G99R44G" class="item artwork">
+			<h2>Draper's Shop, Kempton [now Highfield House, 86 Main Street Kempton]</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Artwork</td>
+					</tr>
+					<tr>
+					<th>Medium</th>
+						<td>Photograph, B&amp;W</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>1900</td>
+					</tr>
+					<tr>
+					<th>Archive</th>
+						<td>Libraries Tasmania</td>
+					</tr>
+					<tr>
+					<th>Loc. in Archive</th>
+						<td>Miscellaneous Collection of Photographs</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>PH30</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>PH30-1-7740</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://stors.tas.gov.au/PH30-1-7740">https://stors.tas.gov.au/PH30-1-7740</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>5/5/2022, 1:57:41 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>5/5/2022, 1:57:41 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>5/8/2022, 3:56:53 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_UKXMGTQL">
+<div><div data-schema-version="8"><p>Very old photo of Lumsden’s Draper 
+shop. Church can be seen on the left. A man standing out the front. 
+Blurred edge around the image.</p>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_4B8WU5AG">Libraries Tasmania - PH30-1-7740					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_FG27BIBJ" class="item artwork">
+			<h2>Ellis' Commercial Store</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Artwork</td>
+					</tr>
+					<tr>
+					<th>Medium</th>
+						<td>Photograph, B&amp;W</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>1960</td>
+					</tr>
+					<tr>
+					<th>Archive</th>
+						<td>Libraries Tasmania</td>
+					</tr>
+					<tr>
+					<th>Loc. in Archive</th>
+						<td>Miscellaneous Collection of Photographs</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>PH30</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>PH30-1-301</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://stors.tas.gov.au/PH30-1-301">https://stors.tas.gov.au/PH30-1-301</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>5/5/2022, 1:45:29 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>5/5/2022, 1:45:29 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>5/8/2022, 3:45:31 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_T9G3BKED">
+<div><div data-schema-version="8"><p>Black and white photo. Building has very distinctive windows. Noted as Ellis’ Commercial Store on the Library website.</p>
+<ol>
+<li>
+Showing the old Ellis General Store in a more modern period. Taken c 1960.
+</li>
+<li>
+N/A
+</li>
+<li>
+The Ellis store in run-down condition. Power lines very evident. Metre box on left of building. 
+</li>
+<li>
+no
+</li>
+<li>
+Large tree appears to be dead. Large shrub to the right of the building.Paved footpath and road.
+</li>
+<li>
+Eye is drawn to the windows distinctive style
+</li>
+<li>
+Shows how the building has changed since it was a thriving store.
+</li>
+</ol>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_TNQJTRWM">Libraries Tasmania - PH30-1-301					</li>
+					<li id="item_ISYMBQNG">PH30-1-301.jpg					</li>
+				</ul>
+			</li>
+
+
+			<li id="item_QWD2H3IN" class="item artwork">
+			<h2>HW Ellis' store, Kempton</h2>
+				<table>
+					<tbody><tr>
+						<th>Type</th>
+						<td>Artwork</td>
+					</tr>
+					<tr>
+					<th>Medium</th>
+						<td>Photograph, B&amp;W</td>
+					</tr>
+					<tr>
+					<th>Date</th>
+						<td>1880</td>
+					</tr>
+					<tr>
+					<th>Archive</th>
+						<td>Libraries Tasmania</td>
+					</tr>
+					<tr>
+					<th>Loc. in Archive</th>
+						<td>Miscellaneous Collection of Photographs</td>
+					</tr>
+					<tr>
+					<th>Library Catalog</th>
+						<td>PH30</td>
+					</tr>
+					<tr>
+					<th>Call Number</th>
+						<td>PH30-1-9149</td>
+					</tr>
+					<tr>
+					<th>URL</th>
+						<td><a href="https://stors.tas.gov.au/PH30-1-9149">https://stors.tas.gov.au/PH30-1-9149</a></td>
+					</tr>
+					<tr>
+					<th>Accessed</th>
+						<td>5/5/2022, 1:43:09 PM</td>
+					</tr>
+					<tr>
+					<th>Date Added</th>
+						<td>5/5/2022, 1:43:09 PM</td>
+					</tr>
+					<tr>
+					<th>Modified</th>
+						<td>5/8/2022, 4:02:03 PM</td>
+					</tr>
+				</tbody></table>
+				<h3 class="notes">Notes:</h3>
+				<ul class="notes">
+					<li id="item_ZWBELABB">
+<div><div data-schema-version="8"><p>Black and white photo of Green Ponds store. Four men standing outside. H.W.Ellis. Established 1833.</p>
+<p></p>
+<ol>
+<li>
+Exterior of H.W. Ellis’s General Store, Taken c. 1880.
+</li>
+<li>
+Staged
+</li>
+<li>
+Four men standing on the kerb outside the building. Woodens boxes 
+stacked in a pile, and a hand-trolley outside the door. Cans can be seen
+ stacked in the window, plus other displays of goods.
+</li>
+<li>
+Four men standing quite stiffle, hands by their sides, or in their pockets. Looking at the camera.
+</li>
+<li>
+Large tree can be seen behind the building. Road appears to be dirt. 
+Lettering along the building above the windows, just under the roof it 
+quite clear until the last window, when it is too faded to be clear.
+</li>
+<li>
+Eye is drawn to the windows, and the lettering just under the roof.
+</li>
+<li>
+Shows clothing and style of stores in the period.
+</li>
+</ol>
+</div></div>
+					</li>
+				</ul>
+				<h3 class="attachments">Attachments</h3>
+				<ul class="attachments">
+					<li id="item_93UM89L2">Libraries Tasmania - PH30-1-9149					</li>
+					<li id="item_7B9B6RNM">PH30-1-9149.jpg					</li>
+				</ul>
+			</li>
+
+		</ul>
+	
+</body></html>

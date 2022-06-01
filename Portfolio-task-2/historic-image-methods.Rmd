@@ -1,0 +1,72 @@
+---
+title: "Historic Image analysis"
+author: "Sandy Pullen"
+date: "`r Sys.Date()`"
+output: pdf_document
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Image Selection
+
+Using the keywords listed in Table 1, searches for accessible digitsied images were undertaken. Images were selected on the basis of relevance to the theme of heritage in Green Ponds / Kempton.
+
+| Keyword Searches in Groups                                        |
+|-------------------------------------------------------------------|
+| green ponds , green ponds tasmania, green ponds historical images |
+| kempton, kempton tasmania, kempton historical images              |
+| historical buildings kempton                                      |
+| Ellis Store kempton, drapery kempton, highfield house kempton     |
+
+: Keywords used for image searches
+
+A total of 57 images were downloaded. The primary sources for images were:
+
+-   Libraries Tasmania archives
+
+-   Green Ponds Progress Association
+
+-   State Library NSW
+
+-   Private websites.
+
+## Initial Reflection
+
+Zotero was used to manage references, and to add initial reflection notes to all images. The images were then exported to Tropy for further analysis. The title of the image was not imported in the transfer to Tropy so this had to be manually copied to notes. The power of Tropy to sort and manage images was used to categorise and group images. For example, there were several images of the same building taken at different times, so these were categorised under the name of the building. Other categories used were:
+
+-   Panorama photos
+
+-   Sketches
+
+-   People
+
+Following this, twenty images were shortlisted for the structured reflection task, and added to the 'structured reflection' list.
+
+## Structured Reflection
+
+Note for the structured reflection were added in Tropy, and the images in the 'structured reflection' list were exported to a .csv file using the Tropy CSV Eport plugin [@exportw]
+
+The questions chosen for the structured reflection task were:
+
+1.  What is the context of the image? When and where was it taken?
+
+2.  Is the image spontaneous or staged?
+
+3.  What draws the eye immediately? What are the focal points?
+
+4.  What objects or physical features are in the image? Describe any architectural features.
+
+5.  Are there people? What are they doing? What kinds of facial expressions and body language are evident in the image?
+
+6.  What can be seen in the background? Are there any symbols, landmarks, writing that are part of the image?
+
+7.  What insights does this image provide on the past that we would not have without it?
+
+## Image Presentation
+
+The images selected for the presentation were chosen to show how aspects of Kempton have changed over time.
+
+# References

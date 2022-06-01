@@ -2,36 +2,35 @@
 title: "Portfolio Task 1"
 author: "Sandy Pullen"
 date: "`r Sys.Date()`"
-output: pdf_document
+output: html_document
+bibliography: references.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Portfolio Task 1
-
 ## Introduction
 
 The Tasmanian Land Records (1832-1935) dataset contains over 23,000 records relating to deeds of land grants under General Law, which is a system of land title based on common law used up to 1862 in Tasmania.
 
-The Land records dataset, each record contains links to digital objects available at the Tasmanian Names Index held and maintained at Libraries Tasmania. The nature of these links is as follows:
+The Land records dataset, each record contains links to digital objects available at the Tasmanian Names Index held and maintained at Libraries Tasmania [@tasmania]. The nature of these links is as follows:
 
 1.  The URL of the person in the Names Index, which then links to the next two URLS listed here,
 2.  The URL to the index page containing the index record,
 3.  The URL of the digitised image of the deed of land grant relating to that record.
 
-The area of interest for this project is the location of Kempton, a historical town which was previously known as Green Ponds, in the southern Midlands of Tasmania.
+The area of interest for this project is the location of Kempton, which was previously known as Green Ponds, in the Southern Midlands of Tasmania.
 
 ## Method
 
 ### Original Dataset
 
-The Tasmanian Land Records (1832 - 1935) dataset was downloaded in CSV format and saved with filename land.csv
+The Tasmanian Land Records (1832 - 1935) dataset was downloaded in CSV format and saved as land.csv
 
 ### Open Refine
 
-The original dataset was opened in Open Refine and the following steps were performed.
+The original dataset was opened in Open Refine and the following steps were performed:
 
 1.  Check for the location of Kempton, and verify that the earlier name of Green Ponds was not used, and that there were no misspellings for Kempton using 'text facets'.
 
@@ -77,21 +76,17 @@ The data file was saved as refined-land-csv-May-1.csv' in the folder for Portfol
 
 ### Download Images from Libraries Tasmania Website
 
-A Python script was developed to iterate (loop over) the rows of the dataset, and for each image listed, web scraping was used to retrieve the image file and save it with a file extension of .jpg to a subfolder named 'captured'. The LASTNAME and FIRSTNAME1 were added to the filename created in the python script to aid readability of the image list.
+A Python script was developed to iterate (loop over) the rows of the dataset, and for each image listed, web scraping was used to retrieve the image file and save it with a file extension of .jpg to a subfolder named 'captured-grant-images' [@velásquez2021][@pandasr][@maheshwari] .
 
-Web sources used to develop the script are noted here: [^1] [^2] [^3]
-
-[^1]: <https://www.rstudio.com/blog/three-ways-to-program-in-python-with-rstudio>
-
-[^2]: <https://www.machinelearningplus.com/pandas/pandas-read_csv-completed/>
-
-[^3]: <https://www.educative.io/edpresso/how-to-locally-save-an-image-using-urllib>
+The LASTNAME and FIRSTNAME1 were added to the filename created in the python script to aid readability of the image list.
 
 The python script is located in the file 'capture-images.py' in the folder for Portfolio Task 1.
 
 An example of the digitised land record image is shown in Figure 1.
 
-![Figure 1: Deed of Land Grant for Thomas Croxton - image RD1-1-12P110JPG](captured/RD1-1-12P110JPG_Croxton_Thomas.jpg){width="444"}
+![Deed of Land Grant for Thomas Croxton and Edward Randall - image RD1-1-12P110JPG](captured-grant-images/RD1-1-12P110JPG_Croxton_Thomas.jpg)
+
+\newpage
 
 ### Data Entry
 
@@ -105,7 +100,7 @@ New columns were added to allow data entry of information transcribed from the d
 
 -   SUM_PENCE
 
--   BOUNDARY DESCRIPTION
+-   BOUNDARY
 
 -   DIAGRAM
 
@@ -113,7 +108,63 @@ New columns were added to allow data entry of information transcribed from the d
 
 Data Validation was enabled for the DIAGRAM column to allow values of 'yes' or 'no'.
 
-### Measurement Conversion
+### Transcription in Tropy
+
+Tropy was used to transcribe the boundary description text for each image, which was then pasted into the data-entry.xlsx spreadsheet.
+
+## Results
+
+For the 55 records, there were 54 unique images. One image was repeated due to the land being owned in partnership. ( i.e. Thomas Croxton and Edward Randall were joint owners, so there is one record for each person, linking to the same image.)
+
+One record had blank year information, this was visually checked on the deed image, and confirmed as missing. 'missing' was entered into this cell in the data entry phase.
+
+Not all images had monetary values included, and the format of the document changed over the years.
+
+Only one image had a useful diagram in the margin.
+
+![Diagram in the Margin, RD1-1-18P24JPG, William Clark](diagrm-in-margins-Clark-.png)
+
+do something creative to visualise the data - stats by name, year, value?
+
+## Additional Task
+
+Automating the subsequent steps of data collation was beyond the scope of this unit, however they are recorded here for future use. This process will facilitate downloading of historic deeds recording the sale of land in Kempton so that ownership can be traced.
+
+### The Historic Deeds
+
+The Land Information System Tasmania website contains information on historic deeds at <https://www.thelist.tas.gov.au/app/content/property/property-search>
+
+(Note: requires an account to login)
+
+The manual process involved these steps:
+
+-   search for surname and year in the list map site
+
+-   download the index pdf covering the appropriate period
+
+-   search for the correct name, and extract the deed number
+
+-   download the deed and save the image.
+
+as outlined here [Historic Deeds General Law User Guide](https://www.thelist.tas.gov.au/app/content/the-list/help-files/Historic-Deeds/Historic_Deeds_General_Law_guide.pdf)
+
+### Example
+
+-   searching for Croxton and 1842 returns a link to a set of pdfs: 1827-1926_CRO-CRO-1.pdf, 1827-1926_CRO-CRO-2.pdf, 1827-1926_CRO-CRU.pdf
+
+-   the entry for Croxton is in the third pdf, giving a deed number of 02/7259 (see Figure 2).
+
+-   return to the historic deeds website and enter the deed number to download a digitised image (see Figure 3).
+
+![Extracting the deed number](historic-deeds/historic-deed-number.png)
+
+![Historic deed 02/7259 (extract)](historic-deeds/extract-historic-deed-02-7259.png)
+
+\newpage
+
+# Appendix
+
+## Measurement Conversion
 
 Length:
 
@@ -141,30 +192,4 @@ Area:
 
 (Source: [Historic Deeds General Law User Guide](https://www.thelist.tas.gov.au/app/content/the-list/help-files/Historic-Deeds/Historic_Deeds_General_Law_guide.pdf))
 
-## Manual Processes
-
-.. not sure about this... shows subsequent sale of land...
-
-Automating the subsequent steps of data collation was beyond the scope of this unit, so a manual process was used to retrieve the xxx document for each grant from the xx site following the steps outlined in
-
-[Historic Deeds General Law User Guide](https://www.thelist.tas.gov.au/app/content/the-list/help-files/Historic-Deeds/Historic_Deeds_General_Law_guide.pdf)
-
-The manual process involved these steps:
-
--   search for surname and year in the list map site
-
--   download the index pdf covering the appropriate period
-
--   search for the correct name, and extract the deed number and store this in the dataset
-
--   download the deed and save the image.
-
-## Results
-
-For the 55 records, there were 54 unique images. One image was repeated due to the land being owned in partnership. ( i,e, Thomas Croxton and Edward Randall were joint owners, so there is one record for each person, linking to the same image.)
-
-One record had blank year information, this was visually checked on the deed image, and confirmed as missing. 'missing' was entered into this cell in the data entry phase.
-
-Not all images had monetary values included, and the format of the document changed over the years.
-
-## Reference List
+# References
