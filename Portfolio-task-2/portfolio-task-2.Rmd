@@ -1,70 +1,73 @@
 ---
-title: "Historic Image Analysis"
+title: "Portfolio Task 2 - Historic Image Analysis"
 author: "Sandy Pullen"
 date: "`r Sys.Date()`"
 output: pdf_document
+bibliography: references2.bib
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Image Selection
+## Visual Presentation
 
-Using the keywords listed in Table 1, searches for accessible digitsied images were undertaken. Images were selected on the basis of relevance to the theme of heritage in Green Ponds / Kempton.
+The images selected for the visual presentation were chosen because they represent an historical overview of Green Ponds / Kempton from a small coaching stopping point on the road to Launceston through an expansion in the 1840s when many Georgian style buildings were constructed to the small town existing today.
 
-| Keyword Searches in Groups                                        |
-|-------------------------------------------------------------------|
-| green ponds , green ponds tasmania, green ponds historical images |
-| kempton, kempton tasmania, kempton historical images              |
-| historical buildings kempton                                      |
+Many of the images do not have any people in them, as the focus is primarily buildings and architecture, however those that do, illustrate the changes in fashion over time, with most people wearing fairly formal attire (coats or long dresses) and the majority wearing hats. Evident also, is the change in infrastructure such as paved roads, kerbs and footpath and electricity power-lines that were introduced in the modern era.
 
-: Keywords used for image searches
+\newpage
 
-A total of 55 images were downloaded. The primary sources for images were:
+### Beginnings
 
--   Libraries Tasmania archives
+Before the invention of photography, we must rely on visual media such as drawings and paintings for an assessment of how things looked. These three artworks show the small beginnings of the settlement at Green Ponds.
 
--   Green Ponds Progress Association
+Link to Source data: [Beginnings Zotero Report](zotero-report-beginnings.html)
 
--   State Library NSW
 
--   Private websites.
+![Artist L. Lebreton; lithograph by P. Blanchard c. 1841 [@blanchard1841]](images/nla.obj-136478027-1.jpg)
 
-## Initial Reflection
+![Green Ponds, Nov 26 (1844?) [@mansfield1844]](images/AUTAS001125645101.jpg)
 
-Zotero was used to manage references, and to add initial reflection notes to all images. The images were then exported to Tropy for further analysis. The title of the image was not imported in the transfer to Tropy so this had to be manually copied to notes.
 
-The power of Tropy to sort and manage images was used to categorise and group images. For example, there were several images of the same building taken at different times, so these were categorised under the name of the building. Other categories used were:
+\newpage
 
--   Panorama photos
+### 86 Main Street, Kempton
 
--   Sketches
+The series of photos of the property at 86 Main Street illustrates the heritage of the buildings in the town of Kempton. The property was used for decades as a store selling drapery and groceries, and was something of a town landmark, hence the earlier photos with people arranged outside. Finer details such as the road construction, kerbing, footpaths and so on can also be examined across the time period of the images. At a later time, the property was converted to a private residence, and renovated. Even though the exterior is painted white, the original architectural features and decorations are still evident. Described as 'Georgian style residence' built in the 1840s, when put up for sale in 2021, it sold for \$715,000 as a prestige residence [@86main2021].
 
--   People
+Link to Source data: [Highfield House Zotero Report](zotero-report-highfield-house.html)
 
-Following this, twenty images were shortlisted for the structured reflection task.
+![86 Main Street Kempton - Lumsden Drapery c. 1900 [@drapers1900]](images/PH30-1-7740.jpg)
 
-## Structured Reflection
+![86 Main Street Kempton - Sibley's Drapery c. 1925 [@lsibley]](images/PH30-1-9154.jpg)
 
-The questions chosen for the structured reflection task were:
+![86 Main Street Kempton - Highfield House - 2021 [@86main2021]](images/Highfield-House.jpg)
 
-1.  What is the context of the image? When and where was it taken?
+![86 Main Street Kempton - Highfield House - 2021 [@86main2021]](images/Highfield-House-aerial.jpg)
 
-2.  Is the image spontaneous or staged?
 
-3.  What draws the eye immediately? What are the focal points?
 
-4.  What objects or physical features are in the image? Describe any architectural features.
+\newpage
 
-5.  Are there people? What are they doing? What kinds of facial expressions and body language are evident in the image?
+### Ellis's Store
 
-6.  What can be seen in the background? Are there any symbols, landmarks, writing that are part of the image?
+The 'Original Green Ponds Stores' is situated at Main Street, Kempton. It was established in 1833 by William Henry Ellis (as per the lettering on the building) however it is likely the building in the photos was built c. 1840. Ellis also built Dysart House in the same time period. WH Ellis expanded the building in 1852 with extension having a taller roof-line than the original building. After his death, the store continued under the ownership of his sons (hence the lettering change to H.W. Ellis). A fire in 1966 destroyed the 1852 addition leaving a much smaller building, which has been partially restored.
 
-7.  What insights does this image provide on the past that we would not have without it?
+The earlier two photos of the store provide an illustration of clothing styles of the time, transportation methods (horse and cart), and glimpses into the operation of a general store via the cans stacked as a display in the window and the wooden crates outside the store.
 
-## Image Presentation
+Link to Source data: [Ellis Zotero Report](zotero-report-ellis.html)
 
-The images selected for the presentation were chosen to show how aspects of Kempton have changed over time.
+![Exterior of H.W. Ellis' General Store, c. 1880. [@hwellis1880]](images/PH30-1-9149.jpg)
 
-## Data
+![Wide angle shot of Ellis' General Store, c. 1900 [@photogra1900]](images/PH30-1-7742.jpg)
+
+![The Ellis store in run-down condition, c. 1960 [@ellisc1960]](images/PH30-1-301.jpg)
+
+![The Ellis store, partially restored with a new roof, present day [@ritchie2015]](images/DSC04434.JPG)
+
+
+
+\newpage
+
+# References

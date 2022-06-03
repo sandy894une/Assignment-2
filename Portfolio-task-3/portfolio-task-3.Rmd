@@ -1,9 +1,8 @@
 ---
-title: "Thematic Analysis"
+title: "Portfolio Task 3 - Thematic Analysis"
 author: "Sandy Pullen"
 date: "`r Sys.Date()`"
-output: html_document
-bibliography: references.bib
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -36,7 +35,11 @@ Some of the projects identified in the earlier 1997 streetscape proposal (which 
 
 -   Ellis Precinct, restore the shop - no mention of Ellis in any other document. It should be noted that the Ellis store had experienced sever damage by fire at this point, and was in a bad state of repair. This is illustrated further in Portfolio Task 2 - Image Analysis.
 
-    ![Extract from Kempton Streetscape Study 1997](images/extract-kempton-streetscape-study.png)
+<center>
+
+![Extract from Kempton Streetscape Study 1997](images/extract-kempton-streetscape-study.png){width="800"}
+
+</center>
 
 ## Significance
 
@@ -45,5 +48,3 @@ The categorisation and coding of data from text documents can be done fairly qui
 The overwhelming focus of Heritage Strategy reports under the Southern Midland Council is on Oatlands. In the 2019-2023 report, in the section titled Heritage Projects, there is only one that is specific to Kempton - the Green Ponds Watch House project.
 
 Heritage Tourism plays a vital part in the community and economy of the town of Kempton as recognised in the 2019-2023 report: 'Whilst it is obvious that the Southern Midlands has a wealth of historic cultural heritage sites, both privately and publicly owned, which have the potential to be integrated into tourism initiatives, a strategic approach to the promotion and interpretation of these sites is required'.
-
-

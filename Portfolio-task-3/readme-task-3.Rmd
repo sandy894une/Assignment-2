@@ -1,0 +1,36 @@
+---
+title: "Readme Task 3"
+author: "Sandy Pullen"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Thematic Analysis
+
+## Dataset Description
+
+The dataset in this activity consists of a set of documents relating to heritage, downloaded from the Southern Midlands Council website (Southern Midlands Council 2020).
+
+| Report Name                                                    | Filename and Link                                                                                       | Taguette           |
+|-------------------|-------------------------------------------|-------------------|
+| Kempton Streetscape Study 1997                                 | [CCD_Projects_Kempton_Streetscape_Study_1997.pdf](data/CCD_Projects_Kempton_Streetscape_Study_1997.pdf) | No                 |
+| ------------------                                             | ---------------------------------                                                                       | ------------------ |
+| Southern Midlands Council Historic Heritage Strategy 2014-2018 | [Heritage_Documents_SMHHS14_18V4.pdf](data/Heritage_Documents_SMHHS14_18V4.pdf)                         | Yes                |
+| ------------------                                             | ---------------------------------                                                                       | ------------------ |
+| Southern Midlands Council Historic Heritage Strategy 2019-2023 | [Heritage_Documents_SMHHS_19_23_FINAL.pdf](data/Heritage_Documents_SMHHS_19_23_FINAL.pdf)               | Yes                |
+| ------------------                                             | ---------------------------------                                                                       | ------------------ |
+| Annual Report 2009-2010                                        | [southernmidlands_annual_report_2009_2010.pdf](data/southernmidlands_annual_report_2009_2010.pdf)       | Yes                |
+| ------------------                                             | ---------------------------------                                                                       | ------------------ |
+| Annual Report 2020-2021 with Financials                        | [Annual_Report_2020-21_with_Financials.pdf](data/Annual_Report_2020-21_with_Financials.pdf)             | Yes                |
+
+: Reports Used in Thematic Analysis
+
+## Definitions of data, key terms, themes or coding schemas
+
+The file containing the codebook exported from Taguette is [codebook.csv](data/codebook.csv).
+
+The file containing the tags and highlighted text is [all_tags.csv](data/all_tags.csv).

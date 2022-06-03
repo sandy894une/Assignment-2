@@ -13,9 +13,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Address the question and highlight key findings drawing on examples from the case studies
 
-800-1000 words
+500-750 words
+A series of related case studies relating to heritage in the historic town of Kempton, Tasmania has been used to illustrate tools and methods in Digital Humanities. 
+
+There were two themes prominent in the case studies used for the portfolio tasks. With an overarching theme of Heritage in Kempton, one theme examined information relating to land grants in the period 1840 - xxx using data from xxx and images from the archives at Libraries Tasmania.
+The second theme examined the focus on heritage in Kempton through a structured text analysis of Heritage reports from the Southern Midlands Council and through an analysis of historical images from Kempton.
 
 ## Discussion
+
 The research methodology used in this project is founded on the principles of reproducible research which can be defined as follows:
 
 documentation of both data and processes for transparency and so that results can be replicated,
@@ -27,6 +32,8 @@ production of tidy data
 Sound data management techniques
 
 FAIR principles relating to data management state that data should be Findable, Accessible, Inter-operable and Re-usable (Essen 2020) . These principles were followed in this project through the use of
+
+discuss structured reflection, usefulness in selecting images.
 
 ## Conclusions
 
