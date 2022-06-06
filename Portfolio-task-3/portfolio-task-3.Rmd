@@ -37,7 +37,7 @@ Some of the projects identified in the earlier 1997 streetscape proposal (which 
 
 <center>
 
-![Extract from Kempton Streetscape Study 1997](images/extract-kempton-streetscape-study.png){width="800"}
+![Figure 1: Extract from Kempton Streetscape Study 1997](/images/extract-kempton-streetscape-study.png){width="800"}
 
 </center>
 
@@ -48,3 +48,8 @@ The categorisation and coding of data from text documents can be done fairly qui
 The overwhelming focus of Heritage Strategy reports under the Southern Midland Council is on Oatlands. In the 2019-2023 report, in the section titled Heritage Projects, there is only one that is specific to Kempton - the Green Ponds Watch House project.
 
 Heritage Tourism plays a vital part in the community and economy of the town of Kempton as recognised in the 2019-2023 report: 'Whilst it is obvious that the Southern Midlands has a wealth of historic cultural heritage sites, both privately and publicly owned, which have the potential to be integrated into tourism initiatives, a strategic approach to the promotion and interpretation of these sites is required'.
+
+Voyant Tools was used to analyse the four documents listed above. The resulting 'cirrus' diagram is shown in Figure 2 and the 'trends' diagram in Figure 3 indicating the prominent role of 'heritage' in the documents.
+
+![Figure 2: Cirrus Diagram from Voyant Tools](/images/voyant-all-docs.jpg)
+![Figure 3: Trends Diagram from Voyant Tools](/images/voyant-trends-all-docs.jpg)

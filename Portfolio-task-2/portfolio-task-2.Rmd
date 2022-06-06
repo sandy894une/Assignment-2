@@ -16,13 +16,12 @@ The images selected for the visual presentation were chosen because they represe
 
 Many of the images do not have any people in them, as the focus is primarily buildings and architecture, however those that do, illustrate the changes in fashion over time, with most people wearing fairly formal attire (coats or long dresses) and the majority wearing hats. Evident also, is the change in infrastructure such as paved roads, kerbs and footpath and electricity power-lines that were introduced in the modern era.
 
-\newpage
 
 ### Beginnings
 
 Before the invention of photography, we must rely on visual media such as drawings and paintings for an assessment of how things looked. These three artworks show the small beginnings of the settlement at Green Ponds.
 
-Link to Source data: [Beginnings Zotero Report](zotero-report-beginnings.html)
+Link to Source data: [Beginnings Zotero Report](/data/zotero-report-beginnings.pdf)
 
 
 ![Artist L. Lebreton; lithograph by P. Blanchard c. 1841 [@blanchard1841]](images/nla.obj-136478027-1.jpg)
@@ -30,13 +29,12 @@ Link to Source data: [Beginnings Zotero Report](zotero-report-beginnings.html)
 ![Green Ponds, Nov 26 (1844?) [@mansfield1844]](images/AUTAS001125645101.jpg)
 
 
-\newpage
 
 ### 86 Main Street, Kempton
 
 The series of photos of the property at 86 Main Street illustrates the heritage of the buildings in the town of Kempton. The property was used for decades as a store selling drapery and groceries, and was something of a town landmark, hence the earlier photos with people arranged outside. Finer details such as the road construction, kerbing, footpaths and so on can also be examined across the time period of the images. At a later time, the property was converted to a private residence, and renovated. Even though the exterior is painted white, the original architectural features and decorations are still evident. Described as 'Georgian style residence' built in the 1840s, when put up for sale in 2021, it sold for \$715,000 as a prestige residence [@86main2021].
 
-Link to Source data: [Highfield House Zotero Report](zotero-report-highfield-house.html)
+Link to Source data: [Highfield House Zotero Report](/data/zotero-report-highfield-house.pdf)
 
 ![86 Main Street Kempton - Lumsden Drapery c. 1900 [@drapers1900]](images/PH30-1-7740.jpg)
 
@@ -48,7 +46,6 @@ Link to Source data: [Highfield House Zotero Report](zotero-report-highfield-hou
 
 
 
-\newpage
 
 ### Ellis's Store
 
@@ -56,7 +53,7 @@ The 'Original Green Ponds Stores' is situated at Main Street, Kempton. It was es
 
 The earlier two photos of the store provide an illustration of clothing styles of the time, transportation methods (horse and cart), and glimpses into the operation of a general store via the cans stacked as a display in the window and the wooden crates outside the store.
 
-Link to Source data: [Ellis Zotero Report](zotero-report-ellis.html)
+Link to Source data: [Ellis Zotero Report](/data/zotero-report-ellis.pdf)
 
 ![Exterior of H.W. Ellis' General Store, c. 1880. [@hwellis1880]](images/PH30-1-9149.jpg)
 
@@ -67,7 +64,3 @@ Link to Source data: [Ellis Zotero Report](zotero-report-ellis.html)
 ![The Ellis store, partially restored with a new roof, present day [@ritchie2015]](images/DSC04434.JPG)
 
 
-
-\newpage
-
-# References

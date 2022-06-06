@@ -15,6 +15,14 @@ Alexander A (2006) Kempton, The Companion to Tasmanian History, https://www.utas
 
 Annual Reports & Strategic Plans (n.d.) Southern Midlands Council, https://www.southernmidlands.tas.gov.au/annual-reports-strategic-plan/, accessed 18 May 2022.
 
+Deeds of Land Grants (n.d.) Search - Tasmanian Archives, https://librariestas.ent.sirsidynix.net.au/client/en_AU/tas/search/detailnonmodal/ent:$002f$002fARCHIVES_SERIES$002f0$002fARCHIVES_SER_DIX:RD1/one?qu=%22rd1%22&te=ARCHIVES_SERIES, accessed 5 June 2022.
+
+Deegan M & Tanner S (2004) ‘Conversion of Primary Sources’, in S Schreibman, R Siemens, and J Unsworth (eds) A Companion to Digital Humanities, John Wiley & Sons, Incorporated, Hoboken, UNITED KINGDOM, http://ebookcentral.proquest.com/lib/une/detail.action?docID=350868.
+
+Dobson JE (2019) Critical Digital Humanities, University of Illinois Press, Urbana.
+
+Drucker J (2021) The Digital Humanities Coursebook: An Introduction to Digital Methods for Research and Scholarship, Routledge, London, doi:10.4324/9781003106531.
+
 Export with CSV Export plugin (2022) Tropy Documentation, https://docs.tropy.org/other-features/export-with-plugins, accessed 31 May 2022.
 
 Gandhi U (2022) Georeferencing Topo Sheets and Scanned Maps, QGIS Tutorials and Tips, https://www.qgistutorials.com/en/docs/3/georeferencing_basics.html, accessed 25 May 2022.
@@ -22,6 +30,8 @@ Gandhi U (2022) Georeferencing Topo Sheets and Scanned Maps, QGIS Tutorials and 
 —— (n.d.) Web Mapping with QGIS2Web (QGIS3), QGIS Tutorials and Tips, https://www.qgistutorials.com/en/docs/3/web_mapping_with_qgis2web.html, accessed 26 May 2022.
 
 Green Ponds Progress Association (2015) Green Ponds Progress Association, https://www.greenpondsprogress.com, accessed 29 May 2022.
+
+Guide for Reproducible Research (2021) The Turing Way, https://the-turing-way.netlify.app/reproducible-research/reproducible-research.html, accessed 5 June 2022.
 
 Heritage Documents, Reports & Strategy Plans (n.d.) Southern Midlands Council, https://www.southernmidlands.tas.gov.au/heritage-documents/, accessed 18 May 2022.
 
@@ -40,6 +50,7 @@ Kempton Watch House (n.d.) Southern Midlands Council, https://www.southernmidlan
 Land Records - CSV (n.d.) Data.gov.au, https://data.gov.au/dataset/ds-dga-4940b8e0-a2b4-49e6-b658-b124d98e2082/distribution/dist-dga-d55b564e-8cee-4642-beec-3d14a46b1536/details?q=, accessed 13 April 2022.
 
 Libraries Tasmania - AF819-1-149 (n.d.), https://stors.tas.gov.au/AF819-1-149, accessed 5 May 2022.
+
 LISTmap (2021) Land Information System Tasmania, https://maps.thelist.tas.gov.au/listmap/app/list/map, accessed 25 May 2022.
 
 Maheshwari V (2022) How to locally save an image using Urllib, Educative: Interactive Courses for Software Developers, https://www.educative.io/edpresso/how-to-locally-save-an-image-using-urllib, accessed 27 May 2022.
@@ -48,7 +59,13 @@ Oatlands Community Association (n.d.) Oatlands Community Association, https://oa
 
 Pandas read_csv() - How to read a csv file in Python - Machine Learning Plus (2021) Machine Learning +, https://www.machinelearningplus.com/pandas/pandas-read_csv-completed/, accessed 27 May 2022.
 
+Parland-von Essen J (2020) ‘Building Historical Knowledge Byte by Byte’:, in M Fridlund, M Oiva, and P Paju (eds) Digital Histories, Emergent Approaches within the New Digital History, Helsinki University Press, doi:10.2307/j.ctv1c9hpt8.10.
+
+Pitti DV (2004) ‘Designing Sustainable Projects and  Publications’, in S Schreibman, R Siemens, and J Unsworth (eds) A Companion to Digital Humanities, John Wiley & Sons, Incorporated, Hoboken, UNITED KINGDOM, http://ebookcentral.proquest.com/lib/une/detail.action?docID=350868.
+
 Placenames Tasmania (n.d.) Placenames Tasmania, https://www.placenames.tas.gov.au/#p1, accessed 26 May 2022.
+
+Prabhakaran S (n.d.) How to make any plot in ggplot2?, ggplot2 Tutorial, http://r-statistics.co/ggplot2-Tutorial-With-R.html, accessed 4 June 2022.
 
 Ritchie G (2015) ‘On The Convict Trail: Green Ponds Store, Kempton’, On The Convict Trail, http://ontheconvicttrail.blogspot.com/2015/03/green-ponds-store-kempton.html, accessed 30 May 2022.
 
@@ -58,11 +75,10 @@ Shadows of the Past (n.d.) Southern Midlands Council, https://www.southernmidlan
 
 Southern Midlands Council (2020) Southern Midlands Council, https://www.southernmidlands.tas.gov.au/, accessed 18 May 2022.
 
-Tasmania L (n.d.) ‘Tasmanian Land Records (1832-1935)’, https://data.gov.au/data/dataset/tasmanian-land-records-1832-1972, accessed 30 April 2022.
+‘Tasmanian Land Records (1832-1935)’ (n.d.), https://data.gov.au/data/dataset/tasmanian-land-records-1832-1972, accessed 30 April 2022.
 
 Tasmanian Land Records (1832-1935) (n.d.) Data.gov.au, https://data.gov.au/dataset/ds-dga-4940b8e0-a2b4-49e6-b658-b124d98e2082/details?q=, accessed 3 June 2022.
 
 Velasquez I (2021) Three Ways to Program in Python With RStudio, https://www.rstudio.com/blog/three-ways-to-program-in-python-with-rstudio/, accessed 27 May 2022.
 
-
-
+Wymer KC (2021) Introduction to Digital Humanities, Routledge, New York, https://www-taylorfrancis-com.ezproxy.une.edu.au/books/mono/10.4324/9781003149378/introduction-digital-humanities-kathryn-wymer, accessed 6 June 2022.

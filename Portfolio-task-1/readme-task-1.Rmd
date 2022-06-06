@@ -1,5 +1,5 @@
 ---
-title: "ReadMe"
+title: "ReadMe - Portfolio Task 1"
 author: "Sandy Pullen"
 date: "`r Sys.Date()`"
 output: pdf_document
@@ -8,8 +8,6 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
-# Portfolio Task 1 - Data Schema
 
 ## Data Set Description
 
@@ -55,24 +53,24 @@ The added fields are:
 
 ## Scripts
 
-The Python script is 'capture-images.py' in the folder for Portfolio Task 1. [capture-images.py](data/capture-images.py)
+The Python script is 'capture-images.py' in the folder for Portfolio Task 1. [capture-images.py](/data/capture-images.py)
 
 ## Files used in this project
 
 +------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 | Filename                           | Description                                                            | Link                                            |
 +====================================+========================================================================+=================================================+
-| land.csv                           | raw data of 23,000 + records                                           | [link](data/land.csv)                           |
+| land.csv                           | raw data of 23,000 + records                                           | [link](/data/land.csv)                           |
 +------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
-| refined-land-csv-May-1.csv         | filtered and refined dataset of 55 records for Kempton                 | [link](refined-land-csv-May-1.csv)              |
+| refined-land-csv-May-1.csv         | filtered and refined dataset of 55 records for Kempton                 | [link](/data/refined-land-csv-May-1.csv)              |
 +------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
-| data-entry.xlsx                    | refined dataset with added columns for data entry,                     | [link](data/data-entry.xlsx)                    |
+| data-entry.xlsx                    | refined dataset with added columns for data entry,                     | [link](/data/data-entry.xlsx)                    |
 |                                    |                                                                        |                                                 |
 |                                    | validation rules included.                                             |                                                 |
 +------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
-| portfolio-task-1-collated-data.csv | exported file from Excel after data entry completed on data-entry.xlsl | [link](data/portfolio-task-1-collated-data.csv) |
+| portfolio-task-1-collated-data.csv | exported file from Excel after data entry completed on data-entry.xlsl | [link](/data/portfolio-task-1-collated-data.csv) |
 +------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
-| capture-images.py                  | Python script to download images from Libraries Tasmania website       | [link](data/capture-images.py)                  |
+| capture-images.py                  | Python script to download images from Libraries Tasmania website       | [link](/data/capture-images.py)                  |
 +------------------------------------+------------------------------------------------------------------------+-------------------------------------------------+
 
 ## Variables and Rules

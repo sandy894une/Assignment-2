@@ -6,18 +6,13 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
 ```
 
 ## Introduction
 
 The Tasmanian Land Records (1832-1935) dataset contains over 23,000 records relating to deeds of land grants under General Law, which is a system of land title based on common law used up to 1862 in Tasmania.
-
-The Land records dataset, each record contains links to digital objects available at the Tasmanian Names Index held and maintained at Libraries Tasmania (Tasmania n.d.). The nature of these links is as follows:
-
-1.  The URL of the person in the Names Index, which then links to the next two URLS listed here,
-2.  The URL to the index page containing the index record,
-3.  The URL of the digitised image of the deed of land grant relating to that record.
 
 The area of interest for this project is the location of Kempton, which was previously known as Green Ponds, in the Southern Midlands of Tasmania.
 
@@ -25,7 +20,18 @@ The area of interest for this project is the location of Kempton, which was prev
 
 For the 55 records relating to Kempton, there were 54 unique images downloaded from the Libraries Tasmania website, as described in the Research Methodology for Task 1. One image was repeated due to the land being owned in partnership. ( i.e. Thomas Croxton and Edward Randall were joint owners, so there is one record for each person, linking to the same image.)
 
-One record had blank year information, this was visually checked on the deed image, and confirmed as missing. 'missing' was entered into this cell in the data entry phase.
+One record had blank year information, this was visually checked on the deed image, and confirmed as missing. 'missing' was entered into this cell in the data entry phase. The following bar chart shows the number of historic deeds for each year contained in the dataset.
+
+```{r}
+
+df = read_csv("data/count-data.csv", show_col_types = FALSE)
+p <- ggplot(data=df,aes(x=Year,y=Count)) +
+ geom_bar(stat="identity") +
+ coord_flip() +
+ scale_x_continuous( breaks= df$Year) +
+ scale_y_continuous( breaks= df$Count) 
+p + ggtitle("Count of Land Grant Deeds by Year")
+```
 
 Not all images had monetary values included, and the format of the document changed over the years.
 
@@ -47,13 +53,15 @@ Many of the historic deed images relate to parcels of land shown in Figure 2 and
 
 ## Additional Task
 
-Automating the subsequent steps of data collation was beyond the scope of this unit, however they are recorded here for future use. This process will facilitate downloading of historic deeds recording the sale of land in Kempton so that ownership can be traced.
+Automating the subsequent steps of data collation was beyond the scope of this unit, however they are recorded here for future use. This process will facilitate downloading of historic deeds recording the sale of land in Kempton so that ownership can be traced and a timeline could be produced.
 
 ### The Historic Deeds
 
 The Land Information System Tasmania website contains information on historic deeds at <https://www.thelist.tas.gov.au/app/content/property/property-search>
 
 (Note: requires an account to login)
+
+#### Workflow
 
 The manual process involved these steps:
 
@@ -74,6 +82,8 @@ as outlined here [Historic Deeds General Law User Guide](https://www.thelist.tas
 -   the entry for Croxton is in the third pdf, giving a deed number of 02/7259 (see Figure 3).
 
 -   return to the historic deeds website and enter the deed number to download a digitised image (see Figure 4).
+
+-   thus the share of land has been transferred from Croxton to Randall.
 
 ![Figure 3: Extracting the deed number](images/historic-deed-number.png)
 

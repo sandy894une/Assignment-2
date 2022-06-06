@@ -9,31 +9,37 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Discussion and Conclusions
-
-Address the question and highlight key findings drawing on examples from the case studies
-
-500-750 words
-A series of related case studies relating to heritage in the historic town of Kempton, Tasmania has been used to illustrate tools and methods in Digital Humanities. 
-
-There were two themes prominent in the case studies used for the portfolio tasks. With an overarching theme of Heritage in Kempton, one theme examined information relating to land grants in the period 1840 - xxx using data from xxx and images from the archives at Libraries Tasmania.
-The second theme examined the focus on heritage in Kempton through a structured text analysis of Heritage reports from the Southern Midlands Council and through an analysis of historical images from Kempton.
-
 ## Discussion
+
+Digital Humanities projects require familiarity with the research subject and the available tools and technologies (Pitti 2004). Collection and presentation of materials for a Digital Humanities project requires iterative analysis of the objectives of the project, and the themes and insights that emerge during the project as described by Pitti:
+
+> Analysis of the objectives informs analysis of the data, determining what data and features of the data will be required to meet the objectives, and thus what features will need to be identified and explicitly represented. (Pitti 2004, 472).
+
+In this project, a series of case studies (portfolio tasks) relating to heritage in the historic town of Kempton, Tasmania has been used to illustrate just a few of the wide range of tools and methods in Digital Humanities, and how these tools can be used in the production and dissemination of public 'stories' or interpretations of aspects of local community history and cultural heritage.
+
+In the individual portfolio tasks, different aspects of the use of digital tools were explored. Each task required a different workflow in terms of data selection, analysing, processing and visualising of the components within the task, giving insight into the usefulness of digital tools in the interpretation of local history and heritage.
 
 The research methodology used in this project is founded on the principles of reproducible research which can be defined as follows:
 
-documentation of both data and processes for transparency and so that results can be replicated,
+-   documentation of both data and processes for transparency and so that results can be replicated,
 
-the use of open-source software and file formats
+-   the use of open-source software and file formats for accessibility
 
-production of tidy data
+-   production of tidy data,
 
-Sound data management techniques
+-   sound data management techniques.
 
-FAIR principles relating to data management state that data should be Findable, Accessible, Inter-operable and Re-usable (Essen 2020) . These principles were followed in this project through the use of
+FAIR principles relating to data management state that data should be Findable, Accessible, Inter-operable and Re-usable (Parland-von Essen 2020). These principles were followed in this project through the use of persistant links for data files, and structured metadata and keywords for digital images for findability, accessible data formats, using existing open source formats for interoperability and open source software for re-usability (Parland-von Essen 2020).
 
-discuss structured reflection, usefulness in selecting images.
+There were two strands of investigation in the case studies used for the portfolio tasks, with all having an overarching theme of 'Heritage in Kempton'. One strand examined information relating to land deeds in the period 1840 - 1866 using a land records dataset, and images from the archives at Libraries Tasmania (Land Records - CSV n.d.). The second strand examined the focus on heritage in Kempton through a structured text analysis of Heritage reports from the Southern Midlands Council and through an analysis of historical images from Kempton.
+
+Discoveries as a result of the investigation and analysis in this project included:
+
+-   errors in records were identified such as the in correct transcribing of names on land deed records,
+-   
+
+Visualisations can be easier to absorb, and by using a digital tool such as QGIS to construct layers, multiple representations of data can be constructed. Relationships between historic datasets and current data can be evaluated, connections can be established and illustrated (Wymer 2021). Examples of this are the mapping tasks where heritage data and images were combined to create a clickable map, and where a map from 1894 was overlaid on the current street layout to visualise the similarities and differences in the same location over one hundred years apart.
 
 ## Conclusions
 
+Digitisation of resources creates new opportunities for humanities research. The use of computational methods and digital tools creates new ways of viewing previously inaccessible material. The ability to publish humanities research in open and accessible formats creates opportunities for showcasing local community history and cultural heritage to a wider audience.

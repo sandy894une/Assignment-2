@@ -11,11 +11,15 @@ knitr::opts_chunk$set(echo = TRUE, fig.pos = "!H")
 
 ## Introduction
 
+Digital Humanities is the scholarly combination of computational methods, digital technology and the study of humanities. The three components of a digital humanities project are materials, processing, and presentation (Drucker 2021).
+
 The question explored through this portfolio is:
 
 > *What is the contribution of research in the digital humanities to the production and dissemination of public 'stories' or interpretations about aspects of local community history and cultural heritage? Drawing on a series of related case studies, illustrate how these tools and methods can aid historical scholarship.*
 
-A series of related case studies relating to heritage in the historic town of Kempton, Tasmania has been used to illustrate tools and methods in Digital Humanities.
+A series of related case studies relating to heritage in the historic town of Kempton, Tasmania has been used to develop a project to illustrate the use of digital tools and methods in Digital Humanities.
+
+The materials in this project are digitised images, records and metadata for land deeds and historical buildings relating to Kempton. The processing component required computational processing using RStudio, Python, Taguette, Voyant Tools, Tropy and Excel to extract and analyse text and images from datasets and data archives, create new metadata, and store information. The presentation component involved developing the elements of this web presentation through the use of RStudio, markdown documents and QGIS maps.
 
 ## Background
 
@@ -57,75 +61,82 @@ Community groups of relevance to this project are the Green Ponds Progress Assoc
 
 ## Research Methodology
 
-The research methodology used in this project is founded on the principles of reproducible research and FAIR data which are further discussed in the discussion and conclusions section.
+The research methodology used in this project is founded on the principles of reproducible research and FAIR data. The portfolio tasks were documented and described with reference to the data sources, the steps taken, digital tools used, and results so that the results can be reproduced, and remain accessible through the use of open source software and open source file formats. These principles are further discussed in the discussion and conclusions section.
 
-The major approaches used to complete the portfolio tasks are discussed in the following sections.
+The use of digital technologies and computation methods requires a description of workflow to describe and construct each component of the project (Dobson 2019). The major approaches used to complete the portfolio tasks are discussed in the following sections.
 
 ### Task 1 - Harvesting Data From the Web
 
 This task uses the Tasmanian Land Records (1832-1935) dataset filtered to only include records from Kempton. Images of the historic deeds were downloaded, via a URL in the dataset, from the Tasmanian Names Index which is held and maintained at Libraries Tasmania. Additional data was transcribed and added to the task dataset. The data collated for this task can be used as a foundation for further examination of ownership of land in the Kempton townsite since the 1840s.
 
-For details of filenames, fields, rules and data schema refer to readMe-task-1.
+For details of filenames, fields, rules and data schema refer to [readme-task-1](/data/readme-task-1.pdf.
 
-#### Original Dataset
+#### Workflow
 
-The Tasmanian Land Records (1832 - 1935) dataset was downloaded in CSV format.
+-   Original Dataset - The Tasmanian Land Records (1832 - 1935) dataset was downloaded in CSV format.
 
-#### Open Refine
+    \
+    In this dataset, each record contains links to digital objects available at the Tasmanian Names Index held and maintained at Libraries Tasmania (*Deeds of Land Grants* n.d.). The nature of these links is as follows:
 
-The original dataset was opened in Open Refine and the following steps were performed:
+    -   The URL of the person in the Names Index, which then links to the next two URLS listed here:
 
-1.  Check for the location of Kempton, and verify that the earlier name of Green Ponds was not used, and that there were no misspellings for Kempton using 'text facets'.
+        -   The URL to the index page containing the index record,
 
-2.  Filter for Location=Kempton using 'text facets'. This reduced the dataset to 55 records.
+        -   The URL of the digitised image of the deed of land grant relating to that record.
 
-3.  Check that each column had data, using 'text facets' to check for blanks.
+-   The original dataset was opened in Open Refine and the following steps were performed:
 
-4.  The URL fields contained combined links, so 'Edit Column \> Split into several columns' was used to separate the columns into meaningful data as follows:
+    -   Check for the location of Kempton, and verify that the earlier name of Green Ponds was not used, and that there were no misspellings for Kempton using 'text facets'.
 
-    +---------------------------+---------------------+-----------------------------+
-    | Original Column           | Separator Character | New Columns                 |
-    +===========================+:===================:+=============================+
-    | DIGITAL_OBJECT - URL_TEXT | \|                  | DIGITAL_OBJECT - URL_TEXT 1 |
-    |                           |                     |                             |
-    |                           |                     | DIGITAL_OBJECT - URL_TEXT 2 |
-    +---------------------------+---------------------+-----------------------------+
-    | DIGITAL_OBJECT - URL      | \|                  | DIGITAL_OBJECT - URL 1      |
-    |                           |                     |                             |
-    |                           |                     | DIGITAL_OBJECT - URL 2      |
-    +---------------------------+---------------------+-----------------------------+
-    | NAME                      | ,                   | LASTNAME                    |
-    |                           |                     |                             |
-    |                           |                     | FIRSTNAME                   |
-    +---------------------------+---------------------+-----------------------------+
-    | FIRSTNAME                 | \<space\>           | FIRSTNAME1                  |
-    |                           |                     |                             |
-    |                           |                     | FIRSTNAME2                  |
-    +---------------------------+---------------------+-----------------------------+
+    -   Filter for Location=Kempton using 'text facets'. This reduced the dataset to 55 records.
 
-Three records contained two firstnames, however, since this did not aid in identification of duplicates, the column was split using the space as a separator, and the second firstname was ignored.
+    -   Check that each column had data, using 'text facets' to check for blanks.
 
-The column DIGITAL_OBJECT - URL 2 contained a link to a URL on the Libraries Tasmania website which showed an image viewer, and the relevant image embedded into the viewer. For example the URL for the land grant for Thomas Croxton is:
+    -   The URL fields contained combined links, so 'Edit Column \> Split into several columns' was used to separate the columns into meaningful data as follows:
 
-> [https://stors.tas.gov.au/RD1-1-12\$init=RD1-1-12P110JPG](https://stors.tas.gov.au/AD956-1-1$init=AD956-1-1-00129%7Chttps://stors.tas.gov.au/RD1-1-12$init=RD1-1-12P110JPG)
+        +---------------------------+---------------------+-----------------------------+
+        | Original Column           | Separator Character | New Columns                 |
+        +===========================+:===================:+=============================+
+        | DIGITAL_OBJECT - URL_TEXT | \|                  | DIGITAL_OBJECT - URL_TEXT 1 |
+        |                           |                     |                             |
+        |                           |                     | DIGITAL_OBJECT - URL_TEXT 2 |
+        +---------------------------+---------------------+-----------------------------+
+        | DIGITAL_OBJECT - URL      | \|                  | DIGITAL_OBJECT - URL 1      |
+        |                           |                     |                             |
+        |                           |                     | DIGITAL_OBJECT - URL 2      |
+        +---------------------------+---------------------+-----------------------------+
+        | NAME                      | ,                   | LASTNAME                    |
+        |                           |                     |                             |
+        |                           |                     | FIRSTNAME                   |
+        +---------------------------+---------------------+-----------------------------+
+        | FIRSTNAME                 | \<space\>           | FIRSTNAME1                  |
+        |                           |                     |                             |
+        |                           |                     | FIRSTNAME2                  |
+        +---------------------------+---------------------+-----------------------------+
 
-Inspection of the html code using Firefox revealed that the direct link to the image file without the image viewer frame was:
+    -   Three records contained two firstnames, however, since this did not aid in identification of duplicates, the column was split using the space as a separator, and the second firstname was ignored.
 
-> <https://stors.tas.gov.au/fetch/RD1-1-12P110JPG>
+-   The column DIGITAL_OBJECT - URL 2 contained a link to the Libraries Tasmania website which showed an image viewer, and the relevant image embedded into the viewer. For example the link for the land grant for Thomas Croxton is:
 
-So the column DIGITAL_OBJECT - URL 2 was split, using a separator of '=' to isolate the image name required (i.e. RD1-1-12P110JPG). The column was renamed 'IMAGE'.
+    > <https://stors.tas.gov.au/RD1-1-12$init=RD1-1-12P110JPG>
 
-The data file was saved as refined-land-csv-May-1.csv' in the folder for Portfolio Task 1.
+    -   Inspection of the html code using Firefox revealed that the direct link to the image file without the image viewer frame was:
 
-#### Download Images from Libraries Tasmania Website
+        > <https://stors.tas.gov.au/fetch/RD1-1-12P110JPG>
 
-A Python script was developed to iterate (loop over) the rows of the dataset, and for each image listed, web scraping was used to retrieve the image file and save it with a file extension of .jpg to a subfolder named 'captured-grant-images' (Velasquez 2021; RStudio IDE Tools for reticulate n.d.; Pandas read_csv() - How to read a csv file in Python - Machine Learning Plus 2021; Maheshwari 2022).
+    -   So the column DIGITAL_OBJECT - URL 2 was split, using a separator of '=' to isolate the image name required (i.e. RD1-1-12P110JPG). The column was renamed 'IMAGE'.
 
-The LASTNAME and FIRSTNAME1 were added to the filename created in the Python script to aid readability of the image list.
+-   The data file was saved as refined-land-csv-May-1.csv', see [readme-task-1](/data/readme-task-1.pdf) .
 
-The Python script is 'capture-images.py' in the data folder for Portfolio Task 1.
+-   A Python script was developed to iterate (loop over) the rows of the dataset, and for each image listed, web scraping was used to retrieve the image file and save it with a file extension of .jpg to a subfolder named 'captured-grant-images'. \
+    \
+    Sources: (Velasquez 2021; RStudio IDE Tools for reticulate n.d.; Pandas read_csv() - How to read a csv file in Python - Machine Learning Plus 2021; Maheshwari 2022).\
 
-An example of the digitised land record image is shown in Figure 4.
+    -   The LASTNAME and FIRSTNAME1 were added to the filename created in the Python script to aid readability of the image list.
+
+    -   The Python script is 'capture-images.py', see [readme-task-1](/data/readme-task-1.pdf)
+
+    -   An example of the digitised land record image is shown in Figure 4.
 
 <center>
 
@@ -133,43 +144,39 @@ An example of the digitised land record image is shown in Figure 4.
 
 </center>
 
-#### Data Entry
+-   **Data Entry** - the .csv file created in the previous step was opened in Excel and saved in Excel format as 'data-entry.xlsx'
 
-The .csv file created in the previous step was opened in Excel and saved in Excel format as 'data-entry.xlsx'
+    -   New columns were added to allow data entry of information transcribed from the digital image, as described in the data schema in readMe-task-1
 
-New columns were added to allow data entry of information transcribed from the digital image, as described in the data schema in readMe-task-1
+        -   SUM_POUNDS
 
--   SUM_POUNDS
+        -   SUM_SHILLINGS
 
--   SUM_SHILLINGS
+        -   SUM_PENCE
 
--   SUM_PENCE
+        -   BOUNDARY
 
--   BOUNDARY
+        -   DIAGRAM
 
--   DIAGRAM
+-   **Data Validation** was enabled for the DIAGRAM column to allow values of 'yes' or 'no'.
 
-#### Data Validation
+-   Tropy was used to transcribe the boundary description text for each image, which was then pasted into the data-entry.xlsx spreadsheet. This process uncovered several transcription errors, notably the records designated as Joseph Sheed should have been Joseph Speed.
 
-Data Validation was enabled for the DIAGRAM column to allow values of 'yes' or 'no'.
+-   The R function ggplot was used to create a plot showing the number of deeds for each year between 1840 - 1866 (See Portfolio Task 1) (Prabhakaran n.d.).
 
-#### Transcription in Tropy
+-   The collated data from the finalised version of 'data-entry.xlsx' was exported to 'portfolio-task-1-collated-data.csv'.
 
-Tropy was used to transcribe the boundary description text for each image, which was then pasted into the data-entry.xlsx spreadsheet.
-
-#### Collated Data
-
-The collated data from the finalised version of data-entry.xlsx was exported to portfolio-task-1-collated-data.csv
+-   Analysis of the results is in [Portfolio Task 1](/portfolio-task-1/).
 
 ### Task 2 - Historical Image Analysis
 
 The aim of this task was to curate a visual presentation from a collection of historic images relevant to the case study, following a process of searching for digitised online images, an initial reflection on each image, then a structured reflection in more detail, followed by compilation of the final presentation.
 
-For details of filenames, fields, Tropy files refer to readMe-task-2.
+For details of filenames, fields, Tropy files refer to [readme-task-2](/data/readme-task-2.pdf)
 
-#### Image Selection
+#### Workflow
 
-Using the keywords listed in Table 1, searches for accessible digitised images were undertaken. Images were selected on the basis of relevance to the theme of heritage in Green Ponds / Kempton.
+-   Using the keywords listed in Table 1, searches for accessible digitised images were undertaken. Images were selected on the basis of relevance to the theme of heritage in Green Ponds / Kempton.
 
 | Keyword Searches in Groups                                          |
 |---------------------------------------------------------------------|
@@ -183,33 +190,29 @@ Using the keywords listed in Table 1, searches for accessible digitised images w
 
 : Keywords used for image searches
 
-A total of 57 images were downloaded. The primary sources for images were:
+-   A total of 57 images were downloaded. The primary sources for images were:
 
--   Libraries Tasmania archives
+    -   Libraries Tasmania archives
 
--   Green Ponds Progress Association
+    -   Green Ponds Progress Association
 
--   State Library NSW
+    -   State Library NSW
 
--   Private websites.
+    -   Private websites.
 
-#### Initial Reflection
+-   **Initial Reflection** - Zotero was used to manage references, and to add initial reflection notes to all images. The images were then exported to Tropy for further analysis. The title of the image was not imported in the transfer to Tropy so this had to be manually copied to notes. The power of Tropy to sort and manage images was used to categorise and group images. For example, there were several images of the same building taken at different times, so these were categorised under the name of the building. Other categories used were:
 
-Zotero was used to manage references, and to add initial reflection notes to all images. The images were then exported to Tropy for further analysis. The title of the image was not imported in the transfer to Tropy so this had to be manually copied to notes. The power of Tropy to sort and manage images was used to categorise and group images. For example, there were several images of the same building taken at different times, so these were categorised under the name of the building. Other categories used were:
+    -   Panorama photos
 
--   Panorama photos
+    -   Sketches
 
--   Sketches
+    -   People
 
--   People
+-   Twenty images were shortlisted for the structured reflection task, and added to the 'structured reflection' list.
 
-Following this, twenty images were shortlisted for the structured reflection task, and added to the 'structured reflection' list.
+-   **Structured Reflection** - Notes for the structured reflection were added in Tropy, and the images in the 'structured reflection' list were exported to a .csv file using the Tropy CSV Eport plugin (*Export with CSV Export plugin* 2022).
 
-#### Structured Reflection
-
-Note for the structured reflection were added in Tropy, and the images in the 'structured reflection' list were exported to a .csv file using the Tropy CSV Eport plugin (*Export with CSV Export plugin* 2022).
-
-The questions chosen for the structured reflection task were:
+-   The questions chosen for the structured reflection task were:
 
 1.  What is the context of the image? When and where was it taken?
 
@@ -225,9 +228,7 @@ The questions chosen for the structured reflection task were:
 
 7.  What insights does this image provide on the past that we would not have without it?
 
-#### Image Presentation
-
-The images selected for the presentation were chosen to show how aspects of Kempton have changed over time. Source data from Tropy was copied back to Zotero and reports for each group of images were generated in .html format which were linked to in the presentation.
+-   **Image Presentation -** The images selected for the presentation were chosen to show how aspects of Kempton have changed over time. Source data from Tropy was copied back to Zotero and reports for each group of images were generated in .html format which were linked to in the presentation. The final presentation is in [Portfolio Task 2](/portfolio-task-2/).
 
 ### Task 3 - Thematic Coding
 
@@ -243,9 +244,9 @@ The aim of this task was the application of a qualitative coding methodology on 
 
 -   Annual Report 2020-2021 with Financials
 
-For details of filenames refer to readMe-task-3.
+For details of filenames refer to [readme-task-3](/data/readme-task-3.pdf)
 
-The Streetscape Study, although in pdf format, could not be read by Taguette so was converted to text using the zotero-corpus-creator.R script provided in the unit.Due to the large amount of stylistic writing and diagrams, this document proved inadequate for thematic coding using Taguette.
+The Streetscape Study, although in pdf format, could not be read by Taguette so was converted to text using the zotero-corpus-creator.R script provided in the unit. Due to the large amount of stylistic writing and diagrams, this document proved inadequate for thematic coding using Taguette.
 
 The Annual Report 2009-2010, although in pdf format, could not be read by Taguette so was converted to text using the zotero-corpus-creator.R script provided in the unit.
 
@@ -259,46 +260,36 @@ Both Heritage Strategy reports could be read by Taguette, however there were for
 
 </center>
 
+A discussion of results is in [Portfolio Task 3](/portfolio-task-3/) .
+
 ### Task 4 - Mapping the Data
 
 The aim of this task was to produce a map of the locality that this assignment focuses on, with optional additional tasks. The map at Figure 1 on this page was produced in this task.
 
 #### Additional Mapping Tasks
 
-##### Heritage Places
+Resulting images and links for the additional mapping tasks are in [Portfolio Task 4](/portfolio-task-4/) .
 
-Information on places listed on the Tasmanian Heritage Register are available at <https://www.thelist.tas.gov.au/> and can be exported using the 'Export' feature under 'Tools' to email a zip file of data.
+##### Heritage Places - Workflow
 
-The files can then be unzipped into the QGIS project folder, and added to a layer of the map. The file added in this case was HeritageRegister.shp.
+-   Information on places listed on the Tasmanian Heritage Register are available at <https://www.thelist.tas.gov.au/> and this was exported using the 'Export' feature under 'Tools' to email a zip file of data.
 
-By filtering the attribute table to records with a location of Kempton, adding labels with a call out, and moving the labels for better readability, the image shown in Figure 7 was created and exported as a Print Layer.
+-   The files was then unzipped into the QGIS project folder, and added to a layer of the map. The file added in this case was 'HeritageRegister.shp'.
 
-A clickable version of this map was also created and exported using the QGIS2WEB plugin (Gandhi n.d.). It is envisaged that the historic photos could also be displayed in information box on each click.
+-   By filtering the attribute table to records with a location of Kempton, adding labels with a call out, and moving the labels for better readability, an image was created and exported as a Print Layer.
 
-[Link to clickable map](web-map/clickable-map.html)
+-   A clickable version of this map was also created and exported using the QGIS2WEB plugin (Gandhi n.d.). A collection of historic photos was collated so that individual images can be displayed in the pop-up information box on each click on a heritage place.
 
-<center>
+##### Georeferencing a Map - Workflow
 
-![Figure 7: Places in Kempton listed on the Tasmanian Heritage Register](images/Kempton-Heritage-Places.png){width="800"}
+-   A QGIS tutorial on georeferencing was used to overlay a town chart from the Tasmanian State Library showing land grants in Green Ponds / Kempton (*Libraries Tasmania - AF819-1-149* n.d.; Gandhi 2022).
 
-</center>
+-   Through a series of trial and error attempts to match the chart to the QGIS OpenStreetMap base map, the following settings gave the best results:
 
-##### Georeferencing a Map
+    -   Transformation Type : Projective
 
-A QGIS tutorial on georeferencing was used to overlay a town chart from the Tasmanian State Library showing land grants in Green Ponds / Kempton (*Libraries Tasmania - AF819-1-149* n.d.; Gandhi 2022).
+    -   Target SRS : EPSG:3857 - WGS 84 / Pseudo-Mercator
 
-Through a series of trial and error attempts to match the chart to the QGIS OpenStreetMap base map, the following settings gave the best results:
+    -   Selected CRS (the button next to Target SRS) : Unknown datum based upon the Australian National Spheroid
 
--   Transformation Type : Projective
-
--   Target SRS : EPSG:3857 - WGS 84 / Pseudo-Mercator
-
--   Selected CRS (the button next to Target SRS) : Unknown datum based upon the Australian National Spheroid
-
-Once the Georeferencing was complete, the transparency of the overlay was set to 30% to allow both the overlay and the underlying base map to be visible. The resulting Print Layout image is shown in Figure 8.
-
-<center>
-
-![Figure 8: Printed Town Chart overlay](images/Kempton-Overlay.png){width="800"}
-
-</center>
+-   Once the Georeferencing was complete, the transparency of the overlay was set to 30% to allow both the overlay and the underlying base map to be visible and an image was created using Print Layout.

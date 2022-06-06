@@ -1,5 +1,5 @@
 ---
-title: "Readme Task 2"
+title: "ReadMe - Portfolio Task 2"
 author: "Sandy Pullen"
 date: "`r Sys.Date()`"
 output: pdf_document
@@ -14,6 +14,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Definitions of data, key terms, themes or coding schemas
 
-Link to the Tropy project [HINQ302 Kempton.tpy](HINQ302 Kempton.tpy).
+Link to the Tropy project [HINQ302 Kempton.tpy](/data/HINQ302 Kempton.tpy).
 
-Tropy export of structured reflection [Tropy-export-of-structured-reflection.csv](data/Tropy-export-of-structured-reflection.csv).
+Tropy export of structured reflection [Tropy-export-of-structured-reflection.csv](/data/Tropy-export-of-structured-reflection.csv).

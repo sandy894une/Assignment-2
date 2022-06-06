@@ -1,0 +1,20 @@
+---
+title: "ReadMe - Portfolio Task 4"
+author: "Sandy Pullen"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data Sources
+
+### Heritage Map
+
+Information on places listed on the Tasmanian Heritage Register are available at <https://www.thelist.tas.gov.au/> and can be exported using the 'Export' feature under 'Tools' to email a zip file of data.
+
+
+### Georeferenced Map
+
