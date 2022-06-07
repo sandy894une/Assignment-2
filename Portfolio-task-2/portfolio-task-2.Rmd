@@ -3,7 +3,6 @@ title: "Portfolio Task 2 - Historic Image Analysis"
 author: "Sandy Pullen"
 date: "`r Sys.Date()`"
 output: pdf_document
-bibliography: references2.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -16,36 +15,29 @@ The images selected for the visual presentation were chosen because they represe
 
 Many of the images do not have any people in them, as the focus is primarily buildings and architecture, however those that do, illustrate the changes in fashion over time, with most people wearing fairly formal attire (coats or long dresses) and the majority wearing hats. Evident also, is the change in infrastructure such as paved roads, kerbs and footpath and electricity power-lines that were introduced in the modern era.
 
-
 ### Beginnings
 
 Before the invention of photography, we must rely on visual media such as drawings and paintings for an assessment of how things looked. These three artworks show the small beginnings of the settlement at Green Ponds.
 
 Link to Source data: [Beginnings Zotero Report](/data/zotero-report-beginnings.pdf)
 
+![Artist L. Lebreton; lithograph by P. Blanchard c. 1841 (Blanchard 1841)](images/nla.obj-136478027-1.jpg)
 
-![Artist L. Lebreton; lithograph by P. Blanchard c. 1841 [@blanchard1841]](images/nla.obj-136478027-1.jpg)
-
-![Green Ponds, Nov 26 (1844?) [@mansfield1844]](images/AUTAS001125645101.jpg)
-
-
+![Green Ponds, Nov 26 (1844?) (Mansfield 1844).](images/AUTAS001125645101.jpg)
 
 ### 86 Main Street, Kempton
 
-The series of photos of the property at 86 Main Street illustrates the heritage of the buildings in the town of Kempton. The property was used for decades as a store selling drapery and groceries, and was something of a town landmark, hence the earlier photos with people arranged outside. Finer details such as the road construction, kerbing, footpaths and so on can also be examined across the time period of the images. At a later time, the property was converted to a private residence, and renovated. Even though the exterior is painted white, the original architectural features and decorations are still evident. Described as 'Georgian style residence' built in the 1840s, when put up for sale in 2021, it sold for \$715,000 as a prestige residence [@86main2021].
+The series of photos of the property at 86 Main Street illustrates the heritage of the buildings in the town of Kempton. The property was used for decades as a store selling drapery and groceries, and was something of a town landmark, hence the earlier photos with people arranged outside. Finer details such as the road construction, kerbing, footpaths and so on can also be examined across the time period of the images. At a later time, the property was converted to a private residence, and renovated. Even though the exterior is painted white, the original architectural features and decorations are still evident. Described as 'Georgian style residence' built in the 1840s, when put up for sale in 2021, it sold for \$715,000 as a prestige residence (86 Main Street Kempton, TAS 7030 - House for sale - 3NFNFCS n.d.).
 
 Link to Source data: [Highfield House Zotero Report](/data/zotero-report-highfield-house.pdf)
 
-![86 Main Street Kempton - Lumsden Drapery c. 1900 [@drapers1900]](images/PH30-1-7740.jpg)
+![86 Main Street Kempton - Lumsden Drapery c. 1900 (*Draper's Shop, Kempton [now Highfield House, 86 Main Street Kempton]* 1900)](images/PH30-1-7740.jpg)
 
-![86 Main Street Kempton - Sibley's Drapery c. 1925 [@lsibley]](images/PH30-1-9154.jpg)
+![86 Main Street Kempton - Sibley's Drapery c. 1925 (*L Sibley's grocer and drapery store, Kempton - cars and people in forground* n.d.)](images/PH30-1-9154.jpg)
 
-![86 Main Street Kempton - Highfield House - 2021 [@86main2021]](images/Highfield-House.jpg)
+![86 Main Street Kempton - Highfield House - 2021 (*86 Main Street Kempton, TAS 7030 - House for sale - 3NFNFCS* n.d.)](images/Highfield-House.jpg)
 
-![86 Main Street Kempton - Highfield House - 2021 [@86main2021]](images/Highfield-House-aerial.jpg)
-
-
-
+![86 Main Street Kempton - Highfield House - 2021 (*86 Main Street Kempton, TAS 7030 - House for sale - 3NFNFCS* n.d.)](images/Highfield-House-aerial.jpg)
 
 ### Ellis's Store
 
@@ -55,12 +47,30 @@ The earlier two photos of the store provide an illustration of clothing styles o
 
 Link to Source data: [Ellis Zotero Report](/data/zotero-report-ellis.pdf)
 
-![Exterior of H.W. Ellis' General Store, c. 1880. [@hwellis1880]](images/PH30-1-9149.jpg)
+![Exterior of H.W. Ellis' General Store, c. 1880 (*HW Ellis' store, Kempton* 1880)](images/PH30-1-9149.jpg)
 
-![Wide angle shot of Ellis' General Store, c. 1900 [@photogra1900]](images/PH30-1-7742.jpg)
+![Wide angle shot of Ellis' General Store, c. 1900 (*Photograph - Ellis General Store, Main Street, Kempton* 1900)](images/PH30-1-7742.jpg)
 
-![The Ellis store in run-down condition, c. 1960 [@ellisc1960]](images/PH30-1-301.jpg)
+![The Ellis store in run-down condition, c. 1960 (*Ellis' Commercial Store* 1960)](images/PH30-1-301.jpg)
 
-![The Ellis store, partially restored with a new roof, present day [@ritchie2015]](images/DSC04434.JPG)
+![The Ellis store, partially restored with a new roof, present day (Ritchie 2015)](images/DSC04434.JPG)
 
+## References
 
+86 Main Street Kempton, TAS 7030 - House for sale - 3NFNFCS (n.d.) LJ Hooker Pinnacle Property, <https://pinnacleproperty.ljhooker.com.au/house-in-kempton-tas-7030-au-3nfnfcs>, accessed 19 May 2022.
+
+Blanchard P (1841) Green-Pons, Ile Van Diemen [picture], <https://nla.gov.au/nla.obj-136478027>, accessed 5 May 2022.
+
+Draper's Shop, Kempton [now Highfield House, 86 Main Street Kempton] (1900), <https://stors.tas.gov.au/PH30-1-7740>, accessed 5 May 2022.
+
+Ellis' Commercial Store (1960), <https://stors.tas.gov.au/PH30-1-301>, accessed 5 May 2022.
+
+HW Ellis' store, Kempton (1880), <https://stors.tas.gov.au/PH30-1-9149>, accessed 5 May 2022.
+
+L Sibley's grocer and drapery store, Kempton - cars and people in forground (n.d.), <https://stors.tas.gov.au/PH30-1-9154>, accessed 5 May 2022.
+
+Mansfield JW (1844) Green Ponds Nov 26, <https://stors.tas.gov.au/ILS/SD_ILS-606605>, accessed 5 May 2022.
+
+Photograph - Ellis General Store, Main Street, Kempton (1900), <https://stors.tas.gov.au/PH30-1-7742>, accessed 30 May 2022.
+
+Ritchie G (2015) 'On The Convict Trail: Green Ponds Store, Kempton', On The Convict Trail, <http://ontheconvicttrail.blogspot.com/2015/03/green-ponds-store-kempton.html>, accessed 30 May 2022.

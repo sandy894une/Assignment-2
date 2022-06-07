@@ -33,10 +33,7 @@ FAIR principles relating to data management state that data should be Findable, 
 
 There were two strands of investigation in the case studies used for the portfolio tasks, with all having an overarching theme of 'Heritage in Kempton'. One strand examined information relating to land deeds in the period 1840 - 1866 using a land records dataset, and images from the archives at Libraries Tasmania (Land Records - CSV n.d.). The second strand examined the focus on heritage in Kempton through a structured text analysis of Heritage reports from the Southern Midlands Council and through an analysis of historical images from Kempton.
 
-Discoveries as a result of the investigation and analysis in this project included:
-
--   errors in records were identified such as the in correct transcribing of names on land deed records,
--   
+As a result of the investigation and analysis in this project, errors in records were identified such as the incorrect transcribing of names on land deed records. An apparent imbalance between the focus on heritage in towns in the Southern Midlands local government area was also identified.
 
 Visualisations can be easier to absorb, and by using a digital tool such as QGIS to construct layers, multiple representations of data can be constructed. Relationships between historic datasets and current data can be evaluated, connections can be established and illustrated (Wymer 2021). Examples of this are the mapping tasks where heritage data and images were combined to create a clickable map, and where a map from 1894 was overlaid on the current street layout to visualise the similarities and differences in the same location over one hundred years apart.
 

@@ -61,7 +61,7 @@ Community groups of relevance to this project are the Green Ponds Progress Assoc
 
 ## Research Methodology
 
-The research methodology used in this project is founded on the principles of reproducible research and FAIR data. The portfolio tasks were documented and described with reference to the data sources, the steps taken, digital tools used, and results so that the results can be reproduced, and remain accessible through the use of open source software and open source file formats. These principles are further discussed in the discussion and conclusions section.
+The research methodology used in this project is founded on the principles of reproducible research and FAIR data. The portfolio tasks were documented and described with reference to the data sources, the steps taken, digital tools used, and results so that those results can be reproduced, and remain accessible through the use of open source software and open source file formats. The code hosting platform Github was used for version control. These principles are further discussed in the discussion and conclusions section.
 
 The use of digital technologies and computation methods requires a description of workflow to describe and construct each component of the project (Dobson 2019). The major approaches used to complete the portfolio tasks are discussed in the following sections.
 
@@ -128,7 +128,7 @@ For details of filenames, fields, rules and data schema refer to [readme-task-1]
 
 -   The data file was saved as refined-land-csv-May-1.csv', see [readme-task-1](/data/readme-task-1.pdf) .
 
--   A Python script was developed to iterate (loop over) the rows of the dataset, and for each image listed, web scraping was used to retrieve the image file and save it with a file extension of .jpg to a subfolder named 'captured-grant-images'. \
+-   A Python script was developed to iterate (loop over) the rows of the dataset, and for each image listed, web scraping was used to retrieve the image file and save it with a file extension of .jpg to a subfolder named 'captured-grant-images'.\
     \
     Sources: (Velasquez 2021; RStudio IDE Tools for reticulate n.d.; Pandas read_csv() - How to read a csv file in Python - Machine Learning Plus 2021; Maheshwari 2022).\
 
